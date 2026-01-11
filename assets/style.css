@@ -60,3 +60,41 @@ body {
   font-size: 0.9em;
   color: #555;
 }
+/* =========================
+   MOBILE RESPONSIVE FIX
+   ========================= */
+
+@media (max-width: 768px) {
+
+  .container {
+    grid-template-columns: 1fr;
+    padding: 20px 15px;
+  }
+
+  .sidebar {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .sidebar img {
+    width: 140px;
+  }
+
+  .sidebar h1 {
+    font-size: 1.3em;
+  }
+
+  .sidebar p {
+    font-size: 0.95em;
+  }
+
+  .sidebar a {
+    display: inline-block;
+    margin: 6px 10px;
+  }
+
+  .main h2 {
+    font-size: 1.1em;
+  }
+}
+
