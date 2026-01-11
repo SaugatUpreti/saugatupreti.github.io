@@ -1,9 +1,18 @@
+/* =========================
+   BASE STYLES
+   ========================= */
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Arial, sans-serif;
   margin: 0;
   background: #fafafa;
   color: #222;
 }
+
+/* =========================
+   LAYOUT
+   ========================= */
 
 .container {
   max-width: 1000px;
@@ -13,6 +22,10 @@ body {
   grid-template-columns: 250px 1fr;
   gap: 40px;
 }
+
+/* =========================
+   SIDEBAR
+   ========================= */
 
 .sidebar {
   text-align: center;
@@ -32,23 +45,51 @@ body {
 .sidebar p {
   font-size: 0.9em;
   color: #555;
+  margin-bottom: 15px;
 }
 
-.sidebar a {
+/* NAVIGATION */
+
+.sidebar nav a {
   display: block;
   margin: 6px 0;
+  font-size: 0.95em;
   color: #0056b3;
   text-decoration: none;
+}
+
+.sidebar nav a:hover {
+  text-decoration: underline;
+}
+
+.sidebar nav hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 12px 0;
+}
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
+
+.main {
+  max-width: 720px;
 }
 
 .main h2 {
   border-bottom: 2px solid #ddd;
   padding-bottom: 5px;
   margin-top: 0;
+  font-size: 1.4em;
+}
+
+.main h3 {
+  margin-top: 25px;
+  font-size: 1.1em;
 }
 
 .entry {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .entry-title {
@@ -58,10 +99,26 @@ body {
 .entry-meta {
   font-style: italic;
   font-size: 0.9em;
-  color: #555;
+  color: #666;
 }
+
 /* =========================
-   MOBILE RESPONSIVE FIX
+   CONTACT ICONS
+   ========================= */
+
+.contact-icons a {
+  font-size: 1.4em;
+  margin-right: 15px;
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.contact-icons a:hover {
+  color: #003366;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
    ========================= */
 
 @media (max-width: 768px) {
@@ -72,7 +129,6 @@ body {
   }
 
   .sidebar {
-    text-align: center;
     margin-bottom: 30px;
   }
 
@@ -88,24 +144,12 @@ body {
     font-size: 0.95em;
   }
 
-  .sidebar a {
+  .sidebar nav a {
     display: inline-block;
     margin: 6px 10px;
   }
 
   .main h2 {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
 }
-.sidebar nav hr {
-  border: none;
-  border-top: 1px solid #ddd;
-  margin: 12px 0;
-}
-
-.sidebar nav a {
-  display: block;
-  margin: 6px 0;
-  font-size: 0.95em;
-}
-
