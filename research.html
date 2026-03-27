@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -147,4 +147,186 @@
 
 </div>
 </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Research | Saugat Upreti</title>
+  <meta name="description" content="Research by Saugat Upreti — scientific machine learning for vWF polymer dynamics, energy systems modeling, and computational analysis of physical systems at Cleveland State University.">
+  <meta name="author" content="Saugat Upreti">
+
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://saugatupreti.github.io/research.html">
+  <meta property="og:title"       content="Research | Saugat Upreti">
+  <meta property="og:description" content="Research by Saugat Upreti — scientific ML, vWF polymer dynamics, energy systems.">
+  <meta property="og:image"       content="https://saugatupreti.github.io/assets/profile.jpg">
+
+  <link rel="canonical" href="https://saugatupreti.github.io/research.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+<canvas id="polymer-canvas"></canvas>
+
+<div class="site-wrapper">
+
+  <aside class="sidebar">
+    <div class="profile-ring">
+      <img src="assets/profile.jpg" alt="Saugat Upreti — PhD Researcher, Mechanical Engineering">
+    </div>
+    <div class="sidebar-name">Saugat Upreti</div>
+    <div class="sidebar-role">PhD Researcher &middot; Mechanical Engineering<br>Cleveland State University</div>
+
+    <nav class="sidebar-nav" aria-label="Site navigation">
+      <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="research.html"><i class="fa-solid fa-flask"></i> Research</a>
+      <a href="publications.html"><i class="fa-solid fa-book-open"></i> Publications</a>
+      <a href="projects.html"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+      <a href="teaching.html"><i class="fa-solid fa-chalkboard-user"></i> Teaching</a>
+      <a href="cv.html"><i class="fa-solid fa-file-lines"></i> CV</a>
+      <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+    </nav>
+
+    <div class="sidebar-social">
+      <a href="mailto:Upretisaugat1@gmail.com" title="Email Saugat Upreti"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://scholar.google.com/citations?user=b01hEVcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" title="Google Scholar — Saugat Upreti"><i class="fa-solid fa-graduation-cap"></i></a>
+      <a href="https://www.researchgate.net/profile/Saugat-Upreti?ev=hdr_xprf/" target="_blank" rel="noopener noreferrer" title="ResearchGate — Saugat Upreti"><i class="fa-brands fa-researchgate"></i></a>
+      <a href="https://www.linkedin.com/in/saugat-upreti/" target="_blank" rel="noopener noreferrer" title="LinkedIn — Saugat Upreti"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/SaugatUpreti" target="_blank" rel="noopener noreferrer" title="GitHub — SaugatUpreti"><i class="fa-brands fa-github"></i></a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <section class="card reveal">
+      <h1 class="section-title">Research</h1>
+      <p>
+        My research focuses on developing and applying <strong>scientific machine learning</strong>
+        methods to model, analyze, and interpret engineering and physical systems.
+        I combine physics-based understanding with data-driven approaches to improve
+        predictive reliability and interpretability across multiple domains.
+      </p>
+    </section>
+
+    <section class="card reveal">
+      <h2 class="section-title">Research Themes</h2>
+
+      <div class="entry-card">
+        <div class="entry-meta"><i class="fa-solid fa-atom"></i> &nbsp;Active Research</div>
+        <h3>vWF Polymer Dynamics &amp; Scientific Machine Learning</h3>
+        <p>
+          My primary doctoral research applies scientific ML to the conformational
+          dynamics of <strong>von Willebrand Factor (vWF) polymer chains</strong> under shear flow.
+          vWF undergoes a critical coil-to-stretch transition at physiological shear rates,
+          and understanding this transition is essential for thrombosis and hemostasis modeling.
+        </p>
+        <p>
+          I develop latent-space representations from simulation trajectories to capture
+          globular-to-extended conformational states, using autoencoders and dimensionality
+          reduction to identify whether the latent geometry predicts flow-induced extension
+          without requiring explicit conformation tracking.
+        </p>
+        <div class="tag-list">
+          <span class="tag">vWF Polymers</span>
+          <span class="tag">Shear Flow</span>
+          <span class="tag">Coil-to-Stretch</span>
+          <span class="tag">Latent Space</span>
+          <span class="tag">Autoencoders</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">UMAP / t-SNE</span>
+        </div>
+      </div>
+
+      <div class="entry-card">
+        <div class="entry-meta"><i class="fa-solid fa-brain"></i> &nbsp;Methods</div>
+        <h3>Scientific Machine Learning for Physical Systems</h3>
+        <p>
+          A core theme of my work is integrating physical constraints, conservation laws,
+          and domain knowledge into machine learning frameworks to enhance model
+          generalization and interpretability beyond purely data-driven methods.
+        </p>
+        <p>
+          This includes simulation-driven dataset construction, physics-informed feature
+          engineering, and scalable computational workflows that bridge classical
+          modeling approaches with modern learning architectures.
+        </p>
+        <div class="tag-list">
+          <span class="tag">Physics-Informed ML</span>
+          <span class="tag">Neural Networks</span>
+          <span class="tag">Dimensionality Reduction</span>
+          <span class="tag">Simulation-Based</span>
+        </div>
+      </div>
+
+      <div class="entry-card">
+        <div class="entry-meta"><i class="fa-solid fa-bolt"></i> &nbsp;Prior Research</div>
+        <h3>Energy Systems Modeling &amp; Techno-Economic Analysis</h3>
+        <p>
+          I have conducted research on the modeling and techno-economic evaluation of
+          distributed energy systems, with attention to rural and community-scale
+          applications. This work involves optimal system sizing, cost modeling, and
+          performance assessment of distributed energy assets.
+        </p>
+        <p>
+          The goal is to support informed design decisions that balance technical
+          performance, economic feasibility, and long-term sustainability.
+        </p>
+        <div class="tag-list">
+          <span class="tag">Energy Systems</span>
+          <span class="tag">Techno-Economic</span>
+          <span class="tag">Distributed Generation</span>
+          <span class="tag">Cost Modeling</span>
+        </div>
+      </div>
+
+      <div class="entry-card">
+        <div class="entry-meta"><i class="fa-solid fa-fire"></i> &nbsp;Prior Research</div>
+        <h3>Thermal &amp; Thermochemical Systems</h3>
+        <p>
+          My research background also includes design and analysis of thermal and
+          thermochemical systems, including biomass-based energy conversion technologies
+          and heating systems. This work combines analytical modeling with experimental
+          design and performance evaluation — pyrolytic system design, advanced biomass
+          cookstoves, and feasibility analysis of ground-source heat pump systems.
+        </p>
+        <div class="tag-list">
+          <span class="tag">Pyrolysis</span>
+          <span class="tag">Biomass</span>
+          <span class="tag">Heat Pump</span>
+          <span class="tag">Thermal Analysis</span>
+          <span class="tag">ANSYS Fluent</span>
+        </div>
+      </div>
+
+      <div class="entry-card">
+        <div class="entry-meta"><i class="fa-solid fa-circle-nodes"></i> &nbsp;Philosophy</div>
+        <h3>Integration of Data, Models, and Experiments</h3>
+        <p>
+          Across all projects, I aim to integrate data-driven analysis with
+          physics-based models and experimental insights. My research philosophy
+          emphasizes reproducibility, interpretability, and the translation of
+          computational results into practical engineering understanding.
+        </p>
+        <p>
+          Detailed outcomes are described on the
+          <a href="projects.html">Projects</a> and <a href="publications.html">Publications</a> pages.
+        </p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="assets/polymer.js"></script>
+<script src="assets/main.js"></script>
+</body>
 </html>
+
