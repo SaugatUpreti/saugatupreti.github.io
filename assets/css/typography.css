@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Card titles */
 .research-card-title { font-size: var(--text-lg); margin-bottom: 0.6rem; }
 .project-title       { font-size: var(--text-lg); margin-bottom: 0.4rem; }
-.pub-title           { font-size: var(--text-md); margin-bottom: 0.4rem; color: var(--text-primary); font-weight: 600; }
+.pub-title           { font-size: 1.25rem; line-height: 1.4; margin-bottom: 0.5rem; color: var(--text-primary); font-weight: 600; font-family: var(--font-display); }
 .award-title         { font-size: var(--text-md); margin-bottom: 0.2rem; font-weight: 600; }
 .course-name         { font-size: var(--text-md); margin-bottom: 0.2rem; }
 .timeline-title      { font-size: var(--text-md); margin-bottom: 0.2rem; }
