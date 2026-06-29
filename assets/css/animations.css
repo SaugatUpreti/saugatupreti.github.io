@@ -1,0 +1,56 @@
+/* ── Page load ── */
+body {
+  opacity: 0;
+  animation: page-fade-in 0.5s ease 0.05s forwards;
+}
+
+@keyframes page-fade-in {
+  to { opacity: 1; }
+}
+
+/* ── Hero stagger ── */
+[data-hero-item] {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: hero-rise 0.6s var(--ease-out-expo) forwards;
+}
+
+[data-hero-item="1"] { animation-delay: 0.2s; }
+[data-hero-item="2"] { animation-delay: 0.35s; }
+[data-hero-item="3"] { animation-delay: 0.5s; }
+[data-hero-item="4"] { animation-delay: 0.62s; }
+[data-hero-item="5"] { animation-delay: 0.74s; }
+[data-hero-item="6"] { animation-delay: 0.86s; }
+
+@keyframes hero-rise {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Hero photo */
+.hero-photo {
+  opacity: 0;
+  animation: hero-rise 0.6s var(--ease-out-expo) 0.15s forwards;
+}
+
+/* ── Scroll bounce ── */
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%       { transform: translateX(-50%) translateY(7px); }
+}
+
+/* ── Icon pulse ── */
+@keyframes icon-pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.18); }
+  100% { transform: scale(1); }
+}
+
+/* ── AOS ── */
+[data-aos] { pointer-events: none; }
+[data-aos].aos-animate { pointer-events: auto; }
+
+/* ── Typed cursor ── */
+.typed-cursor { color: var(--accent-mid); font-weight: 300; }
+
+/* ── Scroll margin for fixed nav ── */
+section { scroll-margin-top: var(--nav-h); }

@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Saugat Upreti: PhD researcher in mechanical engineering at Cleveland State University. Scientific machine learning and polymer physics.">
+  <title>Saugat Upreti: Conformations</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@300;400;500&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org","@type":"Person","name":"Saugat Upreti",
+    "url":"https://saugatupreti.github.io/","jobTitle":"Doctoral Candidate in Mechanical Engineering",
+    "affiliation":{"@type":"Organization","name":"Cleveland State University"},
+    "alumniOf":{"@type":"Organization","name":"Kathmandu University"},
+    "knowsAbout":["Scientific Machine Learning","Polymer Physics","vWF","Hemodynamics","Computational Mechanics"],
+    "sameAs":["https://www.linkedin.com/in/saugat-upreti/","https://github.com/SaugatUpreti","https://www.researchgate.net/profile/Saugat-Upreti"]
+  }
+  </script>
+</head>
+<body>
+
+<!-- Site-wide faint chain background -->
+<div class="bg-chain" id="bgChain" aria-hidden="true"><canvas></canvas></div>
+
+<!-- ═══════════════ NAV ═══════════════ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-mark" data-jump="hero">Saugat<em> Upreti</em></a>
+    <nav class="nav-links">
+      <a href="#hero"         data-jump="hero"         data-section="hero">Home</a>
+      <a href="#research"     data-jump="research"     data-section="research">Research</a>
+      <a href="#publications" data-jump="publications" data-section="publications">Publications</a>
+      <a href="#projects"     data-jump="projects"     data-section="projects">Projects</a>
+      <a href="#awards"       data-jump="awards"       data-section="awards">Awards</a>
+      <a href="#teaching"     data-jump="teaching"     data-section="teaching">Teaching</a>
+      <a href="#cv"           data-jump="cv"           data-section="cv">CV</a>
+      <a href="#contact"      data-jump="contact"      data-section="contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="nav-btn" id="cmdBtn" aria-label="Open command palette">
+        <span>Search</span><span class="kbd">⌘K</span>
+      </button>
+      <button class="nav-btn icon-only" id="readingToggle" aria-label="Toggle reading mode" title="Reading mode (R)">
+        <span class="mono">R</span>
+      </button>
+      <button class="nav-btn icon-only" id="tweaksBtn" aria-label="Open tweaks" title="Tweaks (T)">
+        <span class="mono">◉</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="page">
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section class="hero" id="hero" data-screen-label="01 Hero">
+  <div class="hero-chain" id="heroChain" aria-hidden="true"><canvas></canvas></div>
+  <div class="hero-inner">
+    <aside class="hero-meta">
+      <div class="hero-meta-row"><span>No.</span><span>01 / 08</span></div>
+      <div class="hero-meta-row"><span>Location</span><span>Cleveland, OH</span></div>
+      <div class="hero-meta-row"><span>Field</span><span>Sci. ML · Polymer physics</span></div>
+      <div class="hero-meta-row"><span>Status</span><span>Active, 2026</span></div>
+    </aside>
+    <div class="hero-body">
+      <h1 class="hero-name">
+        <span class="given">Saugat</span>
+        <span class="surname">Upreti.</span>
+      </h1>
+      <p class="hero-role">
+        <strong>Doctoral researcher</strong> studying how polymer chains behave when the fluid around them refuses to stay still.
+      </p>
+      <p class="hero-affil">
+        <strong>Cleveland State University</strong><br>
+        Washkewicz College of Engineering · Department of Mechanical Engineering
+      </p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#research" data-jump="research">
+          <span>Read the research</span><span class="btn-arrow">→</span>
+        </a>
+        <a class="btn btn-ghost" href="assets/cv/saugat-upreti-cv.pdf" download>
+          <span>Download CV</span><span class="mono">↓</span>
+        </a>
+      </div>
+      <div class="hero-social">
+        <a href="mailto:Upretisaugat1@gmail.com" aria-label="Email">✉</a>
+        <a href="https://scholar.google.com/citations?user=b01hEVcAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar">G</a>
+        <a href="https://www.researchgate.net/profile/Saugat-Upreti" target="_blank" rel="noopener" aria-label="ResearchGate">R</a>
+        <a href="https://www.linkedin.com/in/saugat-upreti/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        <a href="https://github.com/SaugatUpreti" target="_blank" rel="noopener" aria-label="GitHub">gh</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-caption">
+    Fig. 01. A vWF polymer chain at rest. Shear rate γ ≈ 0.05 s⁻¹.
+  </div>
+  <div class="hero-scroll"><span>Scroll</span><span class="line"></span></div>
+</section>
+
+<!-- ═══════════════ RESEARCH ═══════════════ -->
+<section class="section" id="research" data-screen-label="02 Research">
+  <div class="section-grid">
+    <aside class="section-side">
+      <span class="section-num">§ 01</span>
+      <span class="section-kicker">Research</span>
+    </aside>
+    <div class="section-main">
+      <h2 class="section-title revealable">Physics tells you what to look for. <em>ML tells you where it hides.</em></h2>
+
+      <div class="research-intro revealable d1">
+        <p class="drop">Von Willebrand factor, a long polymer circulating in blood, undergoes dramatic conformational changes when the flow around it gets violent enough. It coils, tumbles, stretches, occasionally snaps open. This matters medically: it's how clotting is triggered.</p>
+        <p class="quiet">My doctoral work simulates these chains with bead-spring models and overdamped Langevin dynamics, then trains deep autoencoders on the trajectories. UMAP and t-SNE on the latent space reveal transition structure that's invisible in the raw coordinates. Try adjusting the shear rate below.</p>
+      </div>
+
+      <!-- ───── Interactive simulation ───── -->
+      <div class="sim revealable d2" id="simModule">
+        <div class="sim-head">
+          <h3>Bead-spring vWF chain <em>under Couette shear</em></h3>
+          <div class="sim-badge"><span class="dot"></span>LIVE · 28 beads · FENE springs</div>
+        </div>
+        <div class="sim-stage">
+          <div class="gridlines"></div>
+          <canvas></canvas>
+          <div class="arrow-top">
+            <span>→</span><span>→</span><span>→</span><span>→</span><span>→</span><span>→</span><span>→</span><span>→</span>
+          </div>
+          <div class="arrow-bot">
+            <span>←</span><span>←</span><span>←</span><span>←</span><span>←</span><span>←</span><span>←</span><span>←</span>
+          </div>
+          <div class="sim-readout">
+            <div><span class="k">phase</span> · <span class="v" id="phaseValue">Coiled</span></div>
+            <div><span class="k">extension</span> · <span class="v" id="extValue">0.00</span>
+              <span class="bar"><span id="extBar" style="width:0%"></span></span>
+            </div>
+          </div>
+        </div>
+        <div class="sim-controls">
+          <div class="ctrl-row">
+            <div class="ctrl-label"><span>Shear rate γ̇</span><span class="v" id="shearValue">0.20 s⁻¹</span></div>
+            <input type="range" id="shearSlider" class="slider" min="0" max="2" step="0.01" value="0.2">
+          </div>
+          <div class="ctrl-row">
+            <div class="ctrl-label"><span>Thermal kᵦT</span><span class="v" id="tempValue">0.35 kᵦT</span></div>
+            <input type="range" id="tempSlider" class="slider" min="0.05" max="1.2" step="0.01" value="0.35">
+          </div>
+          <div class="ctrl-actions">
+            <button class="chip" data-preset="rest">Rest</button>
+            <button class="chip active" data-preset="shear-low">Low shear</button>
+            <button class="chip" data-preset="shear-crit">Critical</button>
+            <button class="chip" data-preset="shear-high">High shear</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="research-cards">
+        <div class="rcard revealable">
+          <span class="small-caps">Primary · 2023–Present</span>
+          <h4>Topology-Aware Representations of vWF Conformations</h4>
+          <p>Autoencoders learn low-dimensional embeddings of chain conformations sampled from Langevin trajectories. The coil-to-stretch transition becomes a single readable trajectory in latent space.</p>
+          <div class="tags">
+            <span>vWF</span><span>Autoencoders</span><span>UMAP</span><span>PyTorch</span><span>Langevin</span>
+          </div>
+        </div>
+        <div class="rcard revealable d1">
+          <span class="small-caps">Prior · Completed</span>
+          <h4>Distributed Energy &amp; Thermochemical Modeling</h4>
+          <p>Techno-economic modeling of biomass cookstoves, pyrolytic systems, and ground-source heat pumps for off-grid communities in rural Nepal. Led to a peer-reviewed publication in IOP Conference Series.</p>
+          <div class="tags">
+            <span>Energy systems</span><span>Techno-economic</span><span>ANSYS Fluent</span><span>MATLAB</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ PUBLICATIONS ═══════════════ -->
+<section class="section" id="publications" data-screen-label="03 Publications">
+  <div class="section-grid">
+    <aside class="section-side">
+      <span class="section-num">§ 02</span>
+      <span class="section-kicker">Publications</span>
+    </aside>
+    <div class="section-main">
+      <h2 class="section-title revealable">Selected <em>writings &amp; talks.</em></h2>
+      <p class="section-lede revealable d1">Peer-reviewed work and recent conference presentations. The complete list lives on Google Scholar.</p>
+
+      <div class="pubs-head">
+        <span>№ · Year · Venue</span>
+        <span>Updated Jun 2026</span>
+      </div>
+
+      <!-- Publication 01 — 2026 USNCTAM, Upreti first author -->
+      <article class="pub revealable">
+        <div class="pub-num">01</div>
+        <div class="pub-body">
+          <div class="pub-meta">
+            <span>2026</span>
+            <span class="dot">·</span>
+            <span class="pub-venue-kind">Conference presentation</span>
+          </div>
+          <h3 class="pub-title">State-Dependent Uncertainty in Flow-Induced Polymer Unfolding Dynamics</h3>
+          <p class="pub-authors"><mark>Upreti, S.</mark>; Chengalrayan, S.; Usta, M.</p>
+          <p class="pub-venue">Presented at the <em>20th U.S. National Congress on Theoretical and Applied Mechanics (USNCTAM20)</em>, Physics-Based Data-Driven Modeling and Uncertainty Quantification track, Pasadena, CA, Jun 2026.</p>
+          <details class="pub-abstract">
+            <summary>Show abstract</summary>
+            <div class="pub-abstract-body">
+              <p>Dilute polymer suspensions interacting with hydrodynamic shear flow exhibit complex, highly nonlinear conformational dynamics arising from the interplay between flow-induced forces, internal structural constraints governing advection and reeling, and stochastic perturbations. Under shear flow, long-chain polymers undergo repeated folding, rolling, and unfolding events, giving rise to a rich spectrum of conformational states. These conformations play a critical role in determining polymer function, as folding and unfolding behavior directly influence biomechanical and biochemical activity. However, conventional scalar descriptors such as instantaneous extension length and radius of gyration are often insufficient to distinguish these states or to predict subsequent dynamical outcomes, particularly in regimes where similar global measures correspond to qualitatively different behaviors.</p>
+              <p>In this work, we leverage large-scale, physics-based direct numerical simulations of polymer–fluid interactions to generate extensive ensembles of high-dimensional, time-resolved polymer configurations. To systematically organize this complex data, polymer conformations are represented as graphs and analyzed using unsupervised, data-driven representation learning with autoencoder–decoder architectures and attention-based pooling. This approach yields low-dimensional latent embeddings that preserve essential structural and topological features, enabling consistent identification of physically meaningful conformational states, including coiled, partially extended, protruded, and extended configurations.</p>
+              <p>Uncertainty is characterized by conditioning polymer extension outcomes on learned conformational states, revealing intrinsic uncertainty in the dynamical evolution of polymers under shear flow. In particular, minimum-extension (globular) configurations are identified as metastable decision states from which polymers may evolve toward distinct macroscopic outcomes. By analyzing probability distributions of extension outcomes conditioned on state, we characterize the likelihood and range of possible extensions. This enables us to distinguish conformational states that deterministically suppress large extension and exhibit low intrinsic uncertainty from states that admit multiple competing outcomes and therefore exhibit high intrinsic uncertainty. These results illustrate how physics-based simulation ensembles can be mined to distinguish deterministic and stochastic regimes in complex flow-driven polymer dynamics.</p>
+              <p class="pub-keywords"><strong>Keywords:</strong> shear flow, polymer unfolding, conformational states, autoencoders, attention pooling, graph representation learning, uncertainty quantification, latent embedding, metastable states, direct numerical simulation</p>
+            </div>
+          </details>
+          <div class="pub-links">
+            <a href="assets/conferences/upreti-2026-usnctam-polymer-uncertainty.pdf" target="_blank" rel="noopener">Open full PDF ↗</a>
+            <a href="https://scholar.google.com/scholar?q=State-Dependent+Uncertainty+in+Flow-Induced+Polymer+Unfolding+Dynamics+Upreti" target="_blank" rel="noopener">Find on Scholar ↗</a>
+            <span class="tag-pres">Presented by S. Upreti</span>
+          </div>
+          <details class="pub-cite">
+            <summary>Cite this paper (BibTeX)</summary>
+            <div class="pub-cite-body">
+              <button class="pub-cite-copy" type="button" data-copy-target="cite-conf-upreti-2026">Copy</button>
+<pre id="cite-conf-upreti-2026">@inproceedings{upreti2026state,
+  title     = {State-Dependent Uncertainty in Flow-Induced Polymer Unfolding Dynamics},
+  author    = {Upreti, Saugat and Chengalrayan, Sruthi and Usta, Mustafa},
+  booktitle = {20th U.S. National Congress on Theoretical and Applied Mechanics (USNCTAM20)},
+  year      = {2026},
+  month     = jun,
+  address   = {Pasadena, CA, USA},
+  note      = {Physics-Based Data-Driven Modeling and Uncertainty Quantification track}
+}</pre>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- Publication 02 — 2026 USNCTAM, Chengalrayan first author -->
+      <article class="pub revealable d1">
+        <div class="pub-num">02</div>
+        <div class="pub-body">
+          <div class="pub-meta">
+            <span>2026</span>
+            <span class="dot">·</span>
+            <span class="pub-venue-kind">Conference presentation</span>
+          </div>
+          <h3 class="pub-title">Biofluid Mechanics of Von Willebrand Factor Interactions with Extracellular Vesicles</h3>
+          <p class="pub-authors">Chengalrayan, S.; <mark>Upreti, S.</mark>; Usta, M.</p>
+          <p class="pub-venue">Presented at the <em>20th U.S. National Congress on Theoretical and Applied Mechanics (USNCTAM20)</em>, Bio-Fluid Mechanics track, Pasadena, CA, Jun 2026.</p>
+          <details class="pub-abstract">
+            <summary>Show abstract</summary>
+            <div class="pub-abstract-body">
+              <p>The mechanics of deformable biological macromolecules is central to many physiological processes, yet remains poorly understood when multiple physical interactions coexist. A prominent example is von Willebrand Factor (vWF), a large multimeric polymer whose conformation is altered under shear and extensional flow, transitioning from a compact globular structure to an extended conformation as hydrodynamic forces overcome internal elastic resistance. A key feature of vWF is its A1 domain, which governs interactions with other biomolecules and surfaces through electrostatic charges. In blood flow, vWF coexists with extracellular vesicles (EVs), nanoscale particles with negatively charged surfaces, introducing long-range electrostatic interactions into an already complex fluid-structure system. How these interactions alter polymer dynamics under flow remains an open question in biofluid mechanics.</p>
+              <p>Here, we investigate coupled hydrodynamic and electrostatic mechanics of a flexible polymer interacting with charged particles in shear flow using multiscale multiphase direct numerical simulations. The polymer is modelled as a bead-spring chain coupled to the lattice Boltzmann solver through Langevin dynamics, enabling resolution of polymer elasticity, hydrodynamic interactions, and thermal fluctuations. Suspended particles representing EVs interact with the polymer through long-range electrostatic coupling. This unified, two-way coupled framework enables systematic analysis of flow-dependent interaction regimes governing polymer conformational dynamics.</p>
+              <p>The results demonstrate that polymer conformation is governed by a balance between shear-induced hydrodynamic stretching and electrostatic restoring interactions arising from oppositely charged particle–polymer interactions. In the absence of electrostatic interactions, polymer unfolding occurs when hydrodynamic forces exceed the intrinsic elastic restoring force, defining a critical shear rate for extension. The presence of charged particles introduces an additional electrostatic contribution to the effective restoring force, stabilizing compact polymer configurations and shifting the critical shear rate for unfolding to higher values. This stabilization effect increases with particle concentration. As the imposed shear rate increases beyond this modified threshold, hydrodynamic forces dominate the force balance, reducing particle–polymer proximity and weakening electrostatic interaction energy. Under these conditions, electrostatic stabilization becomes ineffective, and the polymer undergoes sustained elongation. Simulations with neutral particles serve as a control case and exhibit no measurable shift in the critical shear rate or conformational statistics, confirming that the observed stabilization and threshold shift arise from electrostatic–hydrodynamic coupling rather than purely hydrodynamic interactions. These results demonstrate how charged particles modify flow-induced conformational dynamics of flexible macromolecules and provide a mechanics framework for understanding polymer behavior in complex biological flows where electrostatic interactions coexist with hydrodynamic forcing.</p>
+              <p class="pub-keywords"><strong>Keywords:</strong> von Willebrand factor, extracellular vesicles, electrostatic interactions, bead-spring chain, lattice Boltzmann method, hydrodynamic shear flow, critical shear rate, multiphase simulation, biofluid mechanics, A1 domain</p>
+            </div>
+          </details>
+          <div class="pub-links">
+            <a href="assets/conferences/chengalrayan-2026-usnctam-vwf-ev.pdf" target="_blank" rel="noopener">Open full PDF ↗</a>
+            <a href="https://scholar.google.com/scholar?q=Biofluid+Mechanics+Von+Willebrand+Factor+Extracellular+Vesicles+Chengalrayan" target="_blank" rel="noopener">Find on Scholar ↗</a>
+            <span class="tag-pres">Co-author · presented by S. Chengalrayan</span>
+          </div>
+          <details class="pub-cite">
+            <summary>Cite this paper (BibTeX)</summary>
+            <div class="pub-cite-body">
+              <button class="pub-cite-copy" type="button" data-copy-target="cite-conf-chengalrayan-2026">Copy</button>
+<pre id="cite-conf-chengalrayan-2026">@inproceedings{chengalrayan2026biofluid,
+  title     = {Biofluid Mechanics of Von Willebrand Factor Interactions with Extracellular Vesicles},
+  author    = {Chengalrayan, Sruthi and Upreti, Saugat and Usta, Mustafa},
+  booktitle = {20th U.S. National Congress on Theoretical and Applied Mechanics (USNCTAM20)},
+  year      = {2026},
+  month     = jun,
+  address   = {Pasadena, CA, USA},
+  note      = {Bio-Fluid Mechanics track}
+}</pre>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- Publication 03 — 2025 USNCCM17 poster -->
+      <article class="pub revealable d2">
+        <div class="pub-num">03</div>
+        <div class="pub-body">
+          <div class="pub-meta">
+            <span>2025</span>
+            <span class="dot">·</span>
+            <span class="pub-venue-kind">Conference poster</span>
+          </div>
+          <h3 class="pub-title">Data-Driven Discovery of Polymer Shape Dynamics in Hydrodynamic Environments</h3>
+          <p class="pub-authors"><mark>Upreti, S.</mark>; Chengalrayan, S.; Usta, M.</p>
+          <p class="pub-venue">Poster presented at the <em>17th U.S. National Congress on Computational Mechanics (USNCCM17)</em>, Jul 2025.</p>
+          <div class="pub-links">
+            <a href="https://scholar.google.com/scholar?q=Data-Driven+Discovery+of+Polymer+Shape+Dynamics+in+Hydrodynamic+Environments+Upreti" target="_blank" rel="noopener">Find on Scholar ↗</a>
+            <span class="tag-pres">Presented</span>
+          </div>
+          <details class="pub-cite">
+            <summary>Cite this paper (BibTeX)</summary>
+            <div class="pub-cite-body">
+              <button class="pub-cite-copy" type="button" data-copy-target="cite-conf-upreti-2025">Copy</button>
+<pre id="cite-conf-upreti-2025">@inproceedings{upreti2025data,
+  title     = {Data-Driven Discovery of Polymer Shape Dynamics in Hydrodynamic Environments},
+  author    = {Upreti, Saugat and Chengalrayan, Sruthi and Usta, Mustafa},
+  booktitle = {17th U.S. National Congress on Computational Mechanics (USNCCM17)},
+  year      = {2025},
+  month     = jul,
+  note      = {Poster}
+}</pre>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- Publication 04 — 2023 IOP -->
+      <article class="pub revealable d3">
+        <div class="pub-num">04</div>
+        <div class="pub-body">
+          <div class="pub-meta">
+            <span>2023</span>
+            <span class="dot">·</span>
+            <span class="pub-venue-kind">Conference paper</span>
+          </div>
+          <h3 class="pub-title">Techno-Economic Analysis of Energy Systems in Thakle Namuna Basti: A Case Study of Distributed Energy System Planning in Rural Nepal</h3>
+          <p class="pub-authors">Shah, M.; Koirala, K.; <mark>Upreti, S.</mark>; Sanjel, N.</p>
+          <p class="pub-venue"><em>IOP Conference Series: Materials Science and Engineering</em>, vol. 1279, no. 1, art. 012007.</p>
+          <details class="pub-abstract">
+            <summary>Show abstract</summary>
+            <div class="pub-abstract-body">
+              <p>The electrical supply system in most underdeveloped nations is incredibly undependable. The country's existing distribution system has experienced regular power outages due to population growth, industrial expansion, rough terrain, and a long-distance transmission network. The conventional approach to centralized generation and transmission is failing to address this challenge, and as a response, the utilization of renewable energy sources is expanding day by day to alleviate the energy crisis.</p>
+              <p>The purpose of this study is to perform a techno-economic analysis of a 100% renewable off-grid and on-grid hybrid energy system for the electrification of Thakle Namuna Basti, a small communal village in Melamchi, Sindhupalchok. The HOMER Pro 3.14 program is used to analyze the feasibility of the suggested hybrid power system. The available resources are provided as input parameters along with load data, and HOMER Pro optimizes the list of system architectures for that specific site. In addition, sensitivity analysis is performed for the proposed HES (Hybrid Energy System).</p>
+              <p>The main outcome of the project is to find the best system architecture based on various economic parameters such as Net Present Cost (NPC), Levelized Cost of Electricity (LCOE), and Operating and Maintenance Cost. The system with the lowest NPC and LCOE constitutes the best system architecture.</p>
+              <p class="pub-keywords"><strong>Keywords:</strong> hybrid energy system, HOMER Pro, off-grid electrification, on-grid hybrid system, rural Nepal, techno-economic analysis, Net Present Cost, Levelized Cost of Electricity, renewable energy, distributed energy system, micro-grid, solar PV, biomass, energy access, Sindhupalchok, Melamchi</p>
+            </div>
+          </details>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1088/1757-899X/1279/1/012007" target="_blank" rel="noopener">DOI ↗</a>
+            <a href="assets/cv/Shah_2023_IOP.pdf" target="_blank" rel="noopener">Open full PDF ↗</a>
+            <a href="https://scholar.google.com/scholar?q=Techno-Economic+Analysis+Thakle+Namuna+Basti+Distributed+Energy+Rural+Nepal" target="_blank" rel="noopener">Find on Scholar ↗</a>
+          </div>
+          <details class="pub-cite">
+            <summary>Cite this paper (BibTeX)</summary>
+            <div class="pub-cite-body">
+              <button class="pub-cite-copy" type="button" data-copy-target="cite-conf-shah-2023">Copy</button>
+<pre id="cite-conf-shah-2023">@article{shah2023technoeconomic,
+  title     = {Techno-Economic Analysis of Energy Systems in Thakle Namuna Basti: A Case Study of Distributed Energy System Planning in Rural Nepal},
+  author    = {Shah, M. and Koirala, K. and Upreti, S. and Sanjel, N.},
+  journal   = {IOP Conference Series: Materials Science and Engineering},
+  volume    = {1279},
+  number    = {1},
+  pages     = {012007},
+  year      = {2023},
+  publisher = {IOP Publishing},
+  doi       = {10.1088/1757-899X/1279/1/012007},
+  url       = {https://doi.org/10.1088/1757-899X/1279/1/012007}
+}</pre>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <div class="scholar-note revealable d2">
+        <span class="mono">↗</span>
+        <span>The complete, current publication list lives on
+          <a href="https://scholar.google.com/citations?user=b01hEVcAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ PROJECTS ═══════════════ -->
+<section class="section" id="projects" data-screen-label="04 Projects">
+  <div class="section-grid">
+    <aside class="section-side">
+      <span class="section-num">§ 03</span>
+      <span class="section-kicker">Projects</span>
+    </aside>
+    <div class="section-main">
+      <h2 class="section-title revealable">Things I <em>have made,</em> or am making.</h2>
+
+      <div class="project-index">
+        <div class="project-row revealable" data-href="https://github.com/SaugatUpreti">
+          <span class="project-row-num">01</span>
+          <div class="project-row-body">
+            <div class="project-row-meta"><span class="st-active">Ongoing</span><span>·</span><span>2023 – present</span></div>
+            <h3 class="project-row-title">vWF Polymer Latent-Space Analysis</h3>
+            <p class="project-row-desc">Bead-spring simulation of vWF under Couette flow, combined with deep autoencoders to learn latent representations of chain conformation. Dimensionality reduction (UMAP/t-SNE) reveals the coil-to-stretch transition as a single readable curve.</p>
+            <div class="project-row-tags"><span>Python</span><span>PyTorch</span><span>UMAP</span><span>NumPy</span></div>
+          </div>
+          <span class="project-row-arrow">→</span>
+        </div>
+
+        <div class="project-row revealable d1" data-href="https://doi.org/10.1088/1757-899X/1279/1/012007">
+          <span class="project-row-num">02</span>
+          <div class="project-row-body">
+            <div class="project-row-meta"><span class="st-pub">Published</span><span>·</span><span>2022 – 2023</span></div>
+            <h3 class="project-row-title">Techno-Economic Analysis of Rural Micro-Energy Systems</h3>
+            <p class="project-row-desc">Distributed energy infrastructure modeled for Thakle Namuna Basti, Nepal: biomass, pyrolytic, and ground-source heat sources compared under realistic demand profiles. Published in IOP Conference Series.</p>
+            <div class="project-row-tags"><span>MATLAB</span><span>Energy modeling</span><span>Techno-economic</span></div>
+          </div>
+          <span class="project-row-arrow">→</span>
+        </div>
+
+        <div class="project-row revealable d2">
+          <span class="project-row-num">03</span>
+          <div class="project-row-body">
+            <div class="project-row-meta"><span>Completed</span><span>·</span><span>2021 – 2022</span></div>
+            <h3 class="project-row-title">Pyrolytic System for Liquid Smoke Production</h3>
+            <p class="project-row-desc">Design and thermal analysis of a pyrolytic reactor for producing liquid smoke from biomass feedstock. Included CFD, structural design, and thermodynamic performance evaluation.</p>
+            <div class="project-row-tags"><span>SolidWorks</span><span>CFD</span><span>Thermodynamics</span></div>
+          </div>
+          <span class="project-row-arrow">→</span>
+        </div>
+
+        <div class="project-row revealable d3">
+          <span class="project-row-num">04</span>
+          <div class="project-row-body">
+            <div class="project-row-meta"><span>Completed</span><span>·</span><span>2021</span></div>
+            <h3 class="project-row-title">Advanced Biomass Cookstove &amp; Ground-Source Heat Pump</h3>
+            <p class="project-row-desc">Simulation-driven design of an advanced biomass cookstove with improved combustion efficiency, and a ground-source heat pump system for residential heating in cold climates.</p>
+            <div class="project-row-tags"><span>ANSYS Fluent</span><span>Heat transfer</span><span>Combustion</span></div>
+          </div>
+          <span class="project-row-arrow">→</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ AWARDS ═══════════════ -->
+<section class="section" id="awards" data-screen-label="05 Awards">
+  <div class="section-grid">
+    <aside class="section-side">
+      <span class="section-num">§ 04</span>
+      <span class="section-kicker">Awards</span>
+    </aside>
+    <div class="section-main">
+      <h2 class="section-title revealable">Things people <em>gave me</em> for trying.</h2>
+      <p class="section-lede revealable d1">Competitive funding and recognition during my doctoral studies.</p>
+
+      <div class="awards-list">
+        <div class="award revealable">
+          <div class="award-year">2026 – 2027</div>
+          <h4>Graduate Student Research Award</h4>
+          <p class="award-org">Cleveland State University · Office of Research</p>
+          <p>Competitive university-wide award supporting the dissertation project <em>"Topology-Aware Representation Learning of von Willebrand Factor Conformations under Shear Flow"</em> in the Washkewicz College of Engineering.
+            <a href="https://www.csuohio.edu/research/2026-2027-graduate-student-research-award-gsra-award-announcement" target="_blank" rel="noopener">Official announcement ↗</a>
+          </p>
+        </div>
+        <div class="award revealable d1">
+          <div class="award-year">2023 – present</div>
+          <h4>Graduate Research Assistantship</h4>
+          <p class="award-org">CSU · Washkewicz College of Engineering</p>
+          <p>Full funding for doctoral research in scientific machine learning and polymer physics simulation at the Department of Mechanical Engineering.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ TEACHING ═══════════════ -->
+<section class="section" id="teaching" data-screen-label="06 Teaching">
+  <div class="section-grid">
+    <aside class="section-side">
+      <span class="section-num">§ 05</span>
+      <span class="section-kicker">Teaching</span>
+    </aside>
+    <div class="section-main">
+      <h2 class="section-title revealable"><em>Teaching</em> thermodynamics &amp; heat transfer.</h2>
+
+      <div class="teaching-grid">
+        <div class="teaching-role revealable">
+          <span class="small-caps">Role</span>
+          <h4>Graduate Teaching Assistant</h4>
+          <p class="org">Dept. of Mechanical Engineering</p>
+          <p class="period">Cleveland State University · Aug 2023 – Present</p>
+          <p>Deliver recitations, hold weekly office hours, grade assignments and exams, and support student learning across thermodynamics and heat-transfer courses at both undergraduate and graduate levels.</p>
+        </div>
+
+        <div class="course-list revealable d1">
+          <div class="course">
+            <div class="course-code">MCE 421 / 521</div>
+            <div class="course-body">
+              <h5>Applied Thermodynamics</h5>
+              <div class="lev">Undergrad · Graduate</div>
+              <p>Power cycles, refrigeration systems, psychrometrics, combustion. Bridges classical thermodynamics with real engineering applications.</p>
+            </div>
+          </div>
+          <div class="course">
+            <div class="course-code">MCE 341</div>
+            <div class="course-body">
+              <h5>Engineering Thermodynamics I</h5>
+              <div class="lev">Undergraduate</div>
+              <p>Properties of pure substances, first/second law analysis, entropy, availability.</p>
+            </div>
+          </div>
+          <div class="course">
+            <div class="course-code">MCE 342</div>
+            <div class="course-body">
+              <h5>Heat Transfer</h5>
+              <div class="lev">Undergraduate</div>
+              <p>Conduction, convection, radiation. Analytical and numerical methods for thermal system analysis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout revealable d2">
+        <p>The goal is for students to leave with intuition, not just technique. They should know why an answer makes physical sense before they check the numbers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ CV ═══════════════ -->
+<section class="section" id="cv" data-screen-label="07 CV">
+  <div class="section-grid">
+    <aside class="section-side">
+      <span class="section-num">§ 06</span>
+      <span class="section-kicker">CV</span>
+    </aside>
+    <div class="section-main">
+      <h2 class="section-title revealable">Background &amp; <em>skills.</em></h2>
+
+      <div class="cv-cols revealable d1">
+        <div class="cv-block">
+          <h4>Education &amp; Experience</h4>
+          <div class="cv-entry">
+            <div class="period">2023–present</div>
+            <div class="title">Ph.D. Mechanical Engineering</div>
+            <div class="org">Cleveland State University</div>
+            <ul>
+              <li>vWF polymer dynamics under shear flow</li>
+              <li>Scientific ML &amp; autoencoder-based representation learning</li>
+              <li>Graduate Research &amp; Teaching Assistant</li>
+            </ul>
+          </div>
+          <div class="cv-entry">
+            <div class="period">Mar–Jul 2023</div>
+            <div class="title">Research Assistant</div>
+            <div class="org">Organic Farming Centre, Nepal</div>
+            <ul>
+              <li>Energy system assessment for rural communities</li>
+              <li>Supported publication of IOP conference paper</li>
+            </ul>
+          </div>
+          <div class="cv-entry">
+            <div class="period">2017–2022</div>
+            <div class="title">B.E. Mechanical Engineering</div>
+            <div class="org">Kathmandu University · GPA 3.49 / 4.00</div>
+            <ul>
+              <li>Capstone: pyrolytic system design</li>
+              <li>Projects: cookstove, GSHP, energy audits</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-block">
+          <h4>Programming</h4>
+          <div class="skill-stack">
+            <span>Python</span><span>MATLAB</span><span>PyTorch</span><span>NumPy</span>
+            <span>scikit-learn</span><span>Pandas</span><span>Matplotlib</span>
+          </div>
+
+          <h4 style="margin-top:2rem;">Engineering Software</h4>
+          <div class="skill-stack">
+            <span class="warm">SolidWorks</span><span class="warm">ANSYS Fluent</span><span class="warm">MS Office</span>
+          </div>
+
+          <h4 style="margin-top:2rem;">Research Methods</h4>
+          <div class="skill-stack">
+            <span>Machine Learning</span><span>Dim. reduction</span><span>CFD simulation</span><span>Techno-economic modeling</span>
+          </div>
+
+          <h4 style="margin-top:2rem;">Languages</h4>
+          <div class="language-line">
+            <div class="lang"><span>English</span><span class="lvl">Proficient</span></div>
+            <div class="lang"><span>Nepali</span><span class="lvl">Native</span></div>
+            <div class="lang"><span>Hindi</span><span class="lvl">Intermediate</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cv-cta revealable d2">
+        <a class="btn btn-primary" href="assets/cv/saugat-upreti-cv.pdf" download>
+          <span>Download full CV</span><span class="mono">↓</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ CONTACT ═══════════════ -->
+<section class="section" id="contact" data-screen-label="08 Contact">
+  <div class="section-grid">
+    <aside class="section-side">
+      <span class="section-num">§ 07</span>
+      <span class="section-kicker">Contact</span>
+    </aside>
+    <div class="section-main">
+      <div class="contact">
+        <div class="contact-copy revealable">
+          <p class="big"><em>Let's</em> talk shear, stretch, or anything in between.</p>
+          <p>Open to research collaborations, academic discussions, and professional opportunities. Email is best; I also respond quickly on LinkedIn.</p>
+        </div>
+        <div class="contact-links revealable d1">
+          <a class="contact-link" href="mailto:Upretisaugat1@gmail.com">
+            <span class="k">Email</span><span class="v">Upretisaugat1@gmail.com</span><span class="arr">↗</span>
+          </a>
+          <a class="contact-link" href="https://scholar.google.com/citations?user=b01hEVcAAAAJ&hl=en" target="_blank" rel="noopener">
+            <span class="k">Scholar</span><span class="v">View publications</span><span class="arr">↗</span>
+          </a>
+          <a class="contact-link" href="https://www.researchgate.net/profile/Saugat-Upreti" target="_blank" rel="noopener">
+            <span class="k">ResearchGate</span><span class="v">Research profile</span><span class="arr">↗</span>
+          </a>
+          <a class="contact-link" href="https://www.linkedin.com/in/saugat-upreti/" target="_blank" rel="noopener">
+            <span class="k">LinkedIn</span><span class="v">Connect</span><span class="arr">↗</span>
+          </a>
+          <a class="contact-link" href="https://github.com/SaugatUpreti" target="_blank" rel="noopener">
+            <span class="k">GitHub</span><span class="v">@SaugatUpreti</span><span class="arr">↗</span>
+          </a>
+          <div class="contact-link" style="cursor:default;">
+            <span class="k">Location</span><span class="v">Cleveland, Ohio, USA</span><span class="arr">◎</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  © 2026 Saugat Upreti · Built with vanilla HTML, CSS &amp; a simulated polymer
+</footer>
+
+</main>
+
+<!-- ═══════════════ COMMAND PALETTE ═══════════════ -->
+<div class="cmd-backdrop" id="cmd">
+  <div class="cmd" role="dialog" aria-modal="true" aria-label="Command palette">
+    <input id="cmdInput" type="text" placeholder="Type a command or search…" autocomplete="off">
+    <div class="cmd-hint">
+      <span><span class="kbd">↑</span> <span class="kbd">↓</span> navigate · <span class="kbd">⏎</span> select</span>
+      <span><span class="kbd">Esc</span> close</span>
+    </div>
+    <div class="cmd-list" id="cmdList"></div>
+  </div>
+</div>
+
+<!-- ═══════════════ TWEAKS PANEL ═══════════════ -->
+<div class="tweaks" id="tweaks">
+  <div class="tweaks-head">
+    <h4>Tweaks</h4>
+    <button class="x" id="tweaksClose" aria-label="Close tweaks">✕</button>
+  </div>
+  <div class="tweaks-body">
+    <div class="tweak-row">
+      <label>Type pairing</label>
+      <div class="seg" data-seg="pair">
+        <button data-val="editorial" class="on">Editorial</button>
+        <button data-val="swiss">Swiss</button>
+        <button data-val="scientific">Scientific</button>
+      </div>
+    </div>
+    <div class="tweak-row">
+      <label>Accent</label>
+      <div class="seg" data-seg="accent">
+        <button data-val="navy" class="on">Navy</button>
+        <button data-val="shear">Shear</button>
+        <button data-val="forest">Forest</button>
+        <button data-val="graphite">Graphite</button>
+      </div>
+    </div>
+    <div class="tweak-row">
+      <label>Polymer intensity</label>
+      <div class="seg" data-seg="intensity">
+        <button data-val="off">Off</button>
+        <button data-val="subtle">Subtle</button>
+        <button data-val="medium" class="on">Medium</button>
+        <button data-val="strong">Strong</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<!-- Tweakable defaults (editable by host protocol) -->
+<script>
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "pair": "editorial",
+  "accent": "navy",
+  "intensity": "medium"
+}/*EDITMODE-END*/;
+// Apply initial defaults
+Object.entries(TWEAK_DEFAULTS).forEach(([k, v]) => {
+  if (!document.documentElement.hasAttribute('data-' + k)) {
+    document.documentElement.setAttribute('data-' + k, v);
+  }
+});
+</script>
+
+<script src="polymer.js"></script>
+<script src="ui.js"></script>
+
+<!-- BibTeX copy-to-clipboard -->
+<script>
+(function(){
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest('.pub-cite-copy');
+    if (!btn) return;
+    var id = btn.getAttribute('data-copy-target');
+    var pre = document.getElementById(id);
+    if (!pre) return;
+    var text = pre.textContent;
+    var done = function(){
+      var original = btn.textContent;
+      btn.textContent = 'Copied!';
+      btn.classList.add('copied');
+      setTimeout(function(){ btn.textContent = original; btn.classList.remove('copied'); }, 1600);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done).catch(function(){
+        var ta = document.createElement('textarea');
+        ta.value = text; document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); done(); } catch(_){}
+        document.body.removeChild(ta);
+      });
+    } else {
+      var ta = document.createElement('textarea');
+      ta.value = text; document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); done(); } catch(_){}
+      document.body.removeChild(ta);
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

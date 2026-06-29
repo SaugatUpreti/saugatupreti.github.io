@@ -1,0 +1,61 @@
+:root {
+  /* ── Backgrounds ── */
+  --bg-deep:      #ffffff;
+  --bg-surface:   #f7f6f2;
+  --bg-raised:    #eeecea;
+  --bg-border:    #d8d4cc;
+  --bg-border-light: #e8e5df;
+
+  /* ── Accent — Deep Navy Blue (academic) ── */
+  --accent:       #1e3a6e;
+  --accent-mid:   #2d5299;
+  --accent-dim:   #4a74b8;
+  --accent-glow:  rgba(30, 58, 110, 0.08);
+  --accent-glow2: rgba(30, 58, 110, 0.04);
+
+  /* ── Warm — Sienna/Amber ── */
+  --warm:         #9a5c0a;
+  --warm-dim:     #7a4808;
+  --warm-glow:    rgba(154, 92, 10, 0.1);
+
+  /* ── Semantic ── */
+  --success:      #1a6641;
+  --success-glow: rgba(26, 102, 65, 0.1);
+
+  /* ── Text ── */
+  --text-primary:   #1a1814;
+  --text-secondary: #4a453e;
+  --text-muted:     #908880;
+
+  /* ── Fonts ── */
+  --font-display: 'EB Garamond', Georgia, serif;
+  --font-heading: 'EB Garamond', Georgia, serif;
+  --font-body:    'EB Garamond', Georgia, serif;
+  --font-mono:    'JetBrains Mono', 'Courier New', monospace;
+
+  /* ── Type Scale ── */
+  --text-xs:   0.72rem;
+  --text-sm:   0.85rem;
+  --text-base: 1.05rem;
+  --text-md:   1.15rem;
+  --text-lg:   1.35rem;
+  --text-xl:   1.6rem;
+  --text-2xl:  clamp(1.9rem, 4vw, 2.6rem);
+  --text-3xl:  clamp(2.6rem, 6vw, 4.2rem);
+  --text-hero: clamp(3.2rem, 8vw, 5.8rem);
+
+  /* ── Spacing ── */
+  --section-pad: clamp(5rem, 10vw, 8rem);
+  --container-w: 1320px;
+  --container-narrow: 1080px;
+  --nav-h: 72px;
+  --card-radius: 4px;
+
+  /* ── Easing ── */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:   cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ── Shadows ── */
+  --shadow-card:  0 1px 4px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.06);
+  --shadow-hover: 0 4px 12px rgba(0,0,0,0.08), 0 12px 32px rgba(0,0,0,0.1);
+}

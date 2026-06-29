@@ -1,0 +1,29 @@
+# Environment / secrets
+.env
+.env.*
+*.key
+*.pem
+credentials.json
+secrets.json
+
+# Editor / OS junk
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.swp
+*~
+
+# Node (just in case)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build artifacts
+dist/
+build/
+.cache/
+
+# Logs
+*.log

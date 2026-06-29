@@ -1,0 +1,101 @@
+/* ── vWF Background Canvas ── */
+.vwf-bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ── Navbar on light bg ── */
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 1px 0 var(--bg-border-light);
+}
+
+/* ── Hero ── */
+.section-hero {
+  background: transparent !important;
+  z-index: 1;
+}
+
+.section-hero::before {
+  display: none;
+}
+
+/* ── Section dividers ── */
+.section-deep + .section-surface,
+.section-surface + .section-deep {
+  border-top: 1px solid var(--bg-border-light);
+}
+
+/* ── Light section backgrounds ── */
+.section-deep    { background-color: rgba(255,255,255,0.92); }
+.section-surface { background-color: rgba(247,246,242,0.92); }
+
+/* ── Subtle top line on each section ── */
+.section-deep::after,
+.section-surface::after {
+  display: none;
+}
+
+/* ── Research callout ── */
+.research-callout { margin-top: 2rem; }
+
+/* ── Award icon color variants ── */
+#awards .award-card:nth-child(1) .award-icon-wrap {
+  background: rgba(245,158,11,0.1);
+  color: var(--warm);
+  border-color: rgba(154,92,10,0.2);
+}
+#awards .award-card:nth-child(2) .award-icon-wrap {
+  background: var(--accent-glow);
+  color: var(--accent);
+}
+
+/* ── Teaching ── */
+#teaching .teaching-role-card {
+  background: #fff;
+}
+
+/* ── CV timeline ── */
+.timeline-line {
+  background: var(--bg-border-light);
+}
+
+.timeline-line::after {
+  background: linear-gradient(to bottom, var(--accent), var(--accent-dim));
+}
+
+.timeline-card {
+  background: #fff;
+  border-color: var(--bg-border-light);
+}
+
+.timeline-card:hover {
+  border-color: var(--accent-dim);
+  box-shadow: var(--shadow-hover);
+}
+
+.timeline-dot {
+  background: var(--accent);
+  border-color: var(--bg-surface);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+/* ── Footer ── */
+.footer {
+  background: var(--bg-surface);
+  border-top: 1px solid var(--bg-border-light);
+}
+
+/* ── Mobile watermark ── */
+@media (max-width: 768px) {
+  .section-watermark {
+    font-size: clamp(5rem, 22vw, 7rem);
+    right: -0.5rem;
+    top: 1rem;
+  }
+}

@@ -1,186 +1,1632 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
+
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Saugat Upreti | PhD Researcher in Mechanical Engineering</title>
-  <meta name="description" content="Saugat Upreti is a PhD Researcher in Mechanical Engineering at Cleveland State University, working on scientific machine learning and computational modeling of physical systems including von Willebrand Factor polymer dynamics.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Saugat Upreti: PhD researcher in Mechanical Engineering at Cleveland State University. Research interests: energy, machine learning, scientific machine learning, bioflow, hemodynamics, vWF polymer dynamics.">
+  <meta name="keywords" content="Saugat Upreti, mechanical engineering, scientific machine learning, energy, machine learning, bioflow, hemodynamics, vWF, polymer dynamics, physics-informed neural networks, Cleveland State University">
   <meta name="author" content="Saugat Upreti">
-  <meta name="keywords" content="Saugat Upreti, PhD Researcher, Mechanical Engineering, Cleveland State University, Scientific Machine Learning, vWF, von Willebrand Factor, Polymer Physics">
-
-  <!-- Open Graph -->
-  <meta property="og:type"        content="website">
-  <meta property="og:url"         content="https://saugatupreti.github.io/">
-  <meta property="og:title"       content="Saugat Upreti | PhD Researcher in Mechanical Engineering">
-  <meta property="og:description" content="Saugat Upreti — PhD Researcher at Cleveland State University. Scientific machine learning, polymer dynamics, computational modeling.">
-  <meta property="og:image"       content="https://saugatupreti.github.io/assets/profile.jpg">
-
+  <meta property="og:title" content="Saugat Upreti: Researcher &amp; Engineer">
+  <meta property="og:description" content="PhD Researcher at Cleveland State University. Research interests: Energy, Machine Learning, Scientific Machine Learning, Bioflow, Hemodynamics.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://saugatupreti.github.io/">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://saugatupreti.github.io/">
+  <title>Saugat Upreti: Researcher &amp; Engineer</title>
 
-  <!-- Fonts (free, no key) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-  <!-- Icons (public CDN, no key) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <link rel="stylesheet" href="assets/style.css">
-
-  <!-- Schema.org Person — helps Google associate searches with Saugat Upreti -->
+  <!-- JSON-LD Schema for Google Search -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Saugat Upreti",
-    "jobTitle": "PhD Researcher",
+    "url": "https://saugatupreti.github.io/",
+    "jobTitle": "Doctoral Candidate in Mechanical Engineering",
     "affiliation": {
-      "@type": "CollegeOrUniversity",
-      "name": "Cleveland State University",
-      "department": "Department of Mechanical Engineering"
+      "@type": "Organization",
+      "name": "Cleveland State University"
     },
-    "url": "https://saugatupreti.github.io",
-    "email": "mailto:Upretisaugat1@gmail.com",
-    "image": "https://saugatupreti.github.io/assets/profile.jpg",
+    "alumniOf": {
+      "@type": "Organization",
+      "name": "Kathmandu University"
+    },
+    "knowsAbout": ["Energy", "Machine Learning", "Scientific Machine Learning", "Bioflow", "Hemodynamics", "vWF Polymer Dynamics", "Physics-Informed Neural Networks", "Computational Modeling"],
     "sameAs": [
-      "https://scholar.google.com/citations?user=b01hEVcAAAAJ&hl=en",
-      "https://www.researchgate.net/profile/Saugat-Upreti",
       "https://www.linkedin.com/in/saugat-upreti/",
-      "https://github.com/SaugatUpreti"
-    ],
-    "knowsAbout": [
-      "Scientific Machine Learning",
-      "Mechanical Engineering",
-      "Computational Modeling",
-      "von Willebrand Factor Polymer Dynamics",
-      "Physics-informed Neural Networks"
+      "https://github.com/SaugatUpreti",
+      "https://www.researchgate.net/profile/Saugat-Upreti",
+      "https://scholar.google.com/citations?user=b01hEVcAAAAJ"
     ]
   }
   </script>
+
+  <!-- JSON-LD: Publications (ScholarlyArticle) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "State-Dependent Uncertainty in Flow-Induced Polymer Unfolding Dynamics",
+    "name": "State-Dependent Uncertainty in Flow-Induced Polymer Unfolding Dynamics",
+    "author": [
+      { "@type": "Person", "name": "Saugat Upreti", "affiliation": "Cleveland State University", "sameAs": "https://scholar.google.com/citations?user=b01hEVcAAAAJ" },
+      { "@type": "Person", "name": "Sruthi Chengalrayan", "affiliation": "Cleveland State University" },
+      { "@type": "Person", "name": "Mustafa Usta", "affiliation": "Cleveland State University" }
+    ],
+    "datePublished": "2026-06",
+    "inLanguage": "en",
+    "publisher": { "@type": "Organization", "name": "U.S. National Committee on Theoretical and Applied Mechanics" },
+    "isPartOf": { "@type": "PublicationEvent", "name": "20th U.S. National Congress on Theoretical and Applied Mechanics (USNCTAM20)", "location": "Pasadena, CA, USA", "startDate": "2026-06-21", "endDate": "2026-06-25" },
+    "abstract": "Dilute polymer suspensions interacting with hydrodynamic shear flow exhibit complex, highly nonlinear conformational dynamics arising from the interplay between flow-induced forces, internal structural constraints, and stochastic perturbations. In this work, we leverage large-scale, physics-based direct numerical simulations of polymer-fluid interactions to generate ensembles of high-dimensional polymer configurations, represented as graphs and analyzed using unsupervised representation learning with autoencoder-decoder architectures and attention-based pooling. We identify physically meaningful conformational states (coiled, partially extended, protruded, extended) and characterize state-dependent uncertainty in polymer extension outcomes, revealing minimum-extension globular configurations as metastable decision states.",
+    "keywords": "shear flow, polymer unfolding, conformational states, autoencoders, attention pooling, graph representation learning, uncertainty quantification, latent embedding, metastable states, direct numerical simulation",
+    "url": "https://saugatupreti.github.io/#publications",
+    "image": "https://saugatupreti.github.io/assets/conferences/upreti-2026-usnctam-polymer-uncertainty.pdf"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "Biofluid Mechanics of Von Willebrand Factor Interactions with Extracellular Vesicles",
+    "name": "Biofluid Mechanics of Von Willebrand Factor Interactions with Extracellular Vesicles",
+    "author": [
+      { "@type": "Person", "name": "Sruthi Chengalrayan", "affiliation": "Cleveland State University" },
+      { "@type": "Person", "name": "Saugat Upreti", "affiliation": "Cleveland State University", "sameAs": "https://scholar.google.com/citations?user=b01hEVcAAAAJ" },
+      { "@type": "Person", "name": "Mustafa Usta", "affiliation": "Cleveland State University" }
+    ],
+    "datePublished": "2026-06",
+    "inLanguage": "en",
+    "publisher": { "@type": "Organization", "name": "U.S. National Committee on Theoretical and Applied Mechanics" },
+    "isPartOf": { "@type": "PublicationEvent", "name": "20th U.S. National Congress on Theoretical and Applied Mechanics (USNCTAM20)", "location": "Pasadena, CA, USA", "startDate": "2026-06-21", "endDate": "2026-06-25" },
+    "abstract": "The mechanics of deformable biological macromolecules is central to many physiological processes. Von Willebrand Factor (vWF), a multimeric polymer, undergoes conformational transitions under shear and extensional flow. We investigate coupled hydrodynamic and electrostatic mechanics of a flexible polymer interacting with charged extracellular vesicles in shear flow using multiscale multiphase direct numerical simulations with a bead-spring chain coupled to a lattice Boltzmann solver via Langevin dynamics. Charged particles introduce an electrostatic contribution to the effective restoring force, stabilizing compact polymer configurations and shifting the critical shear rate for unfolding to higher values.",
+    "keywords": "von Willebrand factor, extracellular vesicles, electrostatic interactions, bead-spring chain, lattice Boltzmann method, hydrodynamic shear flow, critical shear rate, multiphase simulation, biofluid mechanics, A1 domain",
+    "url": "https://saugatupreti.github.io/#publications"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "Data-Driven Discovery of Polymer Shape Dynamics in Hydrodynamic Environments",
+    "name": "Data-Driven Discovery of Polymer Shape Dynamics in Hydrodynamic Environments",
+    "author": [
+      { "@type": "Person", "name": "Saugat Upreti", "affiliation": "Cleveland State University", "sameAs": "https://scholar.google.com/citations?user=b01hEVcAAAAJ" },
+      { "@type": "Person", "name": "Sruthi Chengalrayan", "affiliation": "Cleveland State University" },
+      { "@type": "Person", "name": "Mustafa Usta", "affiliation": "Cleveland State University" }
+    ],
+    "datePublished": "2025-07",
+    "inLanguage": "en",
+    "isPartOf": { "@type": "PublicationEvent", "name": "17th U.S. National Congress on Computational Mechanics (USNCCM17)", "startDate": "2025-07" },
+    "url": "https://saugatupreti.github.io/#publications"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "Techno-Economic Analysis of Energy Systems in Thakle Namuna Basti: A Case Study of Distributed Energy System Planning in Rural Nepal",
+    "name": "Techno-Economic Analysis of Energy Systems in Thakle Namuna Basti: A Case Study of Distributed Energy System Planning in Rural Nepal",
+    "author": [
+      { "@type": "Person", "name": "M. Shah", "affiliation": "Kathmandu University" },
+      { "@type": "Person", "name": "K. Koirala", "affiliation": "Kathmandu University" },
+      { "@type": "Person", "name": "Saugat Upreti", "affiliation": "Kathmandu University", "sameAs": "https://scholar.google.com/citations?user=b01hEVcAAAAJ" },
+      { "@type": "Person", "name": "N. Sanjel", "affiliation": "Kathmandu University" }
+    ],
+    "datePublished": "2023",
+    "inLanguage": "en",
+    "publisher": { "@type": "Organization", "name": "IOP Publishing" },
+    "isPartOf": { "@type": "Periodical", "name": "IOP Conference Series: Materials Science and Engineering", "issn": "1757-899X", "volumeNumber": "1279", "issueNumber": "1" },
+    "pageStart": "012007",
+    "identifier": { "@type": "PropertyValue", "propertyID": "DOI", "value": "10.1088/1757-899X/1279/1/012007" },
+    "sameAs": "https://doi.org/10.1088/1757-899X/1279/1/012007",
+    "url": "https://doi.org/10.1088/1757-899X/1279/1/012007",
+    "abstract": "Techno-economic analysis of a 100% renewable off-grid and on-grid hybrid energy system for the electrification of Thakle Namuna Basti, a small communal village in Melamchi, Sindhupalchok, Nepal. HOMER Pro 3.14 is used to optimize system architecture and evaluate Net Present Cost (NPC) and Levelized Cost of Electricity (LCOE). Sensitivity analysis identifies the most economically viable hybrid energy system configuration.",
+    "keywords": "hybrid energy system, HOMER Pro, off-grid electrification, on-grid hybrid system, rural Nepal, techno-economic analysis, Net Present Cost, Levelized Cost of Electricity, renewable energy, distributed energy system, micro-grid, solar PV, biomass, energy access, Sindhupalchok, Melamchi"
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=JetBrains+Mono:wght@300;400;500&amp;display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/typography.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css?v=1776718781678">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
 </head>
+<body data-aos-easing="ease-out-quart" data-aos-duration="700" data-aos-delay="0" style="cursor: crosshair; background-color: rgb(245, 243, 243); font-family: &quot;Times New Roman&quot;;" data-cc-id="cc-1">
 
-<body>
-<canvas id="polymer-canvas"></canvas>
+  <!-- ═══════════════════════════════════════════ NAVBAR ══ -->
+  <header class="navbar scrolled" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Home">SU</a>
 
-<div class="site-wrapper">
+      <nav class="nav-links" id="navLinks" role="navigation" aria-label="Main navigation">
+        <a href="#hero" class="nav-link" data-section="hero">Home</a>
+        <a href="#research" class="nav-link active" data-section="research">Research</a>
+        <a href="#publications" class="nav-link" data-section="publications">Publications</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#awards" class="nav-link" data-section="awards">Awards</a>
+        <a href="#teaching" class="nav-link" data-section="teaching">Teaching</a>
+        <a href="#cv" class="nav-link" data-section="cv">CV</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </nav>
 
-  <!-- ═══════════ SIDEBAR ═══════════ -->
-  <aside class="sidebar">
-    <div class="profile-ring">
-      <img src="assets/profile.jpg" alt="Saugat Upreti — PhD Researcher, Mechanical Engineering">
+      <div class="nav-social">
+        <a href="https://scholar.google.com/citations?user=b01hEVcAAAAJ&amp;hl=en" target="_blank" rel="noopener" aria-label="Google Scholar" class="nav-social-link">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+        <a href="https://www.researchgate.net/profile/Saugat-Upreti" target="_blank" rel="noopener" aria-label="ResearchGate" class="nav-social-link">
+          <i class="ai ai-researchgate"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/saugat-upreti/" target="_blank" rel="noopener" aria-label="LinkedIn" class="nav-social-link">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/SaugatUpreti" target="_blank" rel="noopener" aria-label="GitHub" class="nav-social-link">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://cftlab.github.io/cftlab/" target="_blank" rel="noopener" aria-label="CFT Lab" class="nav-social-link">
+          <i class="fas fa-flask"></i>
+        </a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <div class="sidebar-name">Saugat Upreti</div>
-    <div class="sidebar-role">PhD Researcher &middot; Mechanical Engineering<br>Cleveland State University</div>
+  </header>
 
-    <nav class="sidebar-nav" aria-label="Site navigation">
-      <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-      <a href="research.html"><i class="fa-solid fa-flask"></i> Research</a>
-      <a href="publications.html"><i class="fa-solid fa-book-open"></i> Publications</a>
-      <a href="projects.html"><i class="fa-solid fa-diagram-project"></i> Projects</a>
-      <a href="teaching.html"><i class="fa-solid fa-chalkboard-user"></i> Teaching</a>
-      <a href="cv.html"><i class="fa-solid fa-file-lines"></i> CV</a>
-      <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
-    </nav>
+  <!-- Mobile drawer overlay -->
+  <div class="nav-overlay" id="navOverlay"></div>
 
-    <div class="sidebar-social">
-      <a href="mailto:Upretisaugat1@gmail.com" title="Email Saugat Upreti"><i class="fa-solid fa-envelope"></i></a>
-      <a href="https://scholar.google.com/citations?user=b01hEVcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" title="Google Scholar — Saugat Upreti"><i class="fa-solid fa-graduation-cap"></i></a>
-      <a href="https://www.researchgate.net/profile/Saugat-Upreti?ev=hdr_xprf/" target="_blank" rel="noopener noreferrer" title="ResearchGate — Saugat Upreti"><i class="fa-brands fa-researchgate"></i></a>
-      <a href="https://www.linkedin.com/in/saugat-upreti/" target="_blank" rel="noopener noreferrer" title="LinkedIn — Saugat Upreti"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://github.com/SaugatUpreti" target="_blank" rel="noopener noreferrer" title="GitHub — SaugatUpreti"><i class="fa-brands fa-github"></i></a>
-    </div>
-  </aside>
+  <!-- vWF polymer background canvas (full page) -->
+  <canvas id="polymerCanvas" class="vwf-bg-canvas" aria-hidden="true" width="1402" height="874" style="width: 1275px; height: 795px;"></canvas>
 
-  <!-- ═══════════ MAIN ═══════════ -->
-  <main class="main-content">
+  <!-- ═══════════════════════════════════════════ HERO ══ -->
+  <section id="hero" class="section-hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-photo">
+          <img src="assets/images/profile.jpg" alt="Saugat Upreti" class="hero-photo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="hero-photo-placeholder">SU</div>
+        </div>
 
-    <!-- Hero -->
-    <section class="card hero-card reveal">
-      <div class="hero-badge"><i class="fa-solid fa-atom"></i> PhD Researcher</div>
-      <h1 class="section-title">About Saugat Upreti</h1>
-      <p>
-        I am a PhD researcher in Mechanical Engineering at Cleveland State University.
-        My research sits at the intersection of <strong style="color:#48cae4">physics-based modeling</strong>
-        and <strong style="color:#48cae4">data-driven machine learning</strong>, with a focus on
-        understanding and predicting the behavior of complex physical systems.
-      </p>
-      <p>
-        My current work applies scientific machine learning to the dynamics of
-        <strong style="color:#48cae4">von Willebrand Factor (vWF) polymer chains</strong> under shear flow —
-        exploring how latent representations from simulation data can capture the
-        coil-to-stretch transition and predict flow-induced conformational changes.
-      </p>
-      <p>
-        I develop scalable computational workflows that bridge classical polymer physics
-        with modern learning architectures, emphasizing interpretability and
-        reproducibility throughout.
-      </p>
-    </section>
+        <div class="hero-badge" data-hero-item="1">
+          <span>Cleveland State University · Department of Mechanical Engineering</span>
+          <span class="hero-badge-lab"><a href="https://cftlab.github.io/cftlab/" target="_blank" rel="noopener">Complex Flows and Advanced Transport Lab</a></span>
+        </div>
 
-    <!-- Research Snapshot -->
-    <section class="card reveal">
-      <h2 class="section-title">Research Focus</h2>
+        <h1 class="hero-name" data-hero-item="2">
+          Saugat<br><span class="hero-name-accent animated">Upreti</span>
+        </h1>
 
-      <div class="entry-card">
-        <div class="entry-meta"><i class="fa-solid fa-dna"></i> &nbsp;Current Project</div>
-        <h3>vWF Polymer Dynamics &amp; Scientific ML</h3>
-        <p>
-          Applying dimensionality reduction and latent-space analysis to simulation
-          trajectories of vWF polymer chains to predict shear-flow-induced extension
-          without explicit conformation tracking.
+        <div class="hero-typewriter" data-hero-item="3">
+          <span id="typed-output">Doctoral Candidate in</span><span class="typed-cursor" aria-hidden="true">|</span>
+        </div>
+
+        <p class="hero-bio" data-hero-item="4">
+          PhD candidate at Cleveland State University. My work sits at the boundary of
+          physics-based simulation and machine learning. I study how vWF polymer chains
+          behave under shear flow using bead-spring models and deep autoencoders.
         </p>
-        <div class="tag-list">
-          <span class="tag">vWF Polymers</span>
-          <span class="tag">Shear Flow</span>
-          <span class="tag">Autoencoders</span>
-          <span class="tag">Latent Space</span>
-          <span class="tag">PyTorch</span>
+
+        <div class="hero-ctas" data-hero-item="5">
+          <a href="#research" class="btn btn-primary">
+            View Research <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="assets/cv/saugat-upreti-cv.pdf" class="btn btn-outline" download="">
+            Download CV <i class="fas fa-download"></i>
+          </a>
+        </div>
+
+        <div class="hero-social-row" data-hero-item="6">
+          <a href="mailto:Upretisaugat1@gmail.com" class="hero-social-icon" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://scholar.google.com/citations?user=b01hEVcAAAAJ&amp;hl=en" target="_blank" rel="noopener" class="hero-social-icon" aria-label="Google Scholar">
+            <i class="ai ai-google-scholar"></i>
+          </a>
+          <a href="https://www.researchgate.net/profile/Saugat-Upreti" target="_blank" rel="noopener" class="hero-social-icon" aria-label="ResearchGate">
+            <i class="ai ai-researchgate"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/saugat-upreti/" target="_blank" rel="noopener" class="hero-social-icon" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/SaugatUpreti" target="_blank" rel="noopener" class="hero-social-icon" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <a href="#research" class="hero-scroll-indicator" aria-label="Scroll to research">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+
+</section>
+
+  <!-- ═══════════════════════════════════════════ RESEARCH ══ -->
+  <section id="research" class="section-deep" data-section-id="research">
+    <div class="section-watermark">01</div>
+    <div class="container">
+      <div class="section-header aos-init aos-animate" data-aos="fade-up">
+        <span class="section-label">Research Focus</span>
+        <h2 class="section-title">What I Work On</h2>
+        <p class="section-desc">Using physics-based models and machine learning together to understand how things move, stretch, and change.</p>
+      </div>
+
+      <div class="research-grid">
+        <!-- Primary research card -->
+        <div class="research-card research-card--primary aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+          <div class="research-card-header">
+            <span class="status-tag status-active">ongoing since 2023</span>
+          </div>
+          <h3 class="research-card-title">Topology-Aware Representation Learning of vWF Conformations under Shear Flow</h3>
+          <p class="research-card-desc">
+            vWF polymer chains undergo dramatic conformational changes under shear flow, going from
+            coiled to fully stretched. I simulate this using bead-spring models and overdamped
+            Langevin dynamics, then train autoencoders to learn low-dimensional representations
+            of chain conformations. UMAP and t-SNE reveal transition structure that is invisible
+            in raw data.
+          </p>
+          <div class="tag-row">
+            <span class="tag">vWF polymers</span>
+            <span class="tag">shear flow</span>
+            <span class="tag">autoencoders</span>
+            <span class="tag">latent-space methods</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">UMAP</span>
+            <span class="tag">t-SNE</span>
+            <span class="tag">bead-spring models</span>
+          </div>
+          <a href="#projects" class="card-link">See related projects <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Secondary research card -->
+        <div class="research-card research-card--secondary aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+          <div class="research-card-header">
+            <span class="status-tag status-completed">earlier work, 2021–2023</span>
+          </div>
+          <h3 class="research-card-title">Distributed Energy Systems &amp; Thermochemical Modeling</h3>
+          <p class="research-card-desc">
+            Earlier work on energy access in rural Nepal: techno-economic modeling of
+            biomass cookstoves, pyrolytic systems, and ground-source heat pumps for off-grid
+            communities. Led to a peer-reviewed publication in IOP Conference Series.
+          </p>
+          <div class="tag-row">
+            <span class="tag tag-warm">energy systems</span>
+            <span class="tag tag-warm">techno-economics</span>
+            <span class="tag tag-warm">thermochemical modeling</span>
+            <span class="tag tag-warm">ANSYS Fluent</span>
+            <span class="tag tag-warm">MATLAB</span>
+          </div>
+          <a href="#publications" class="card-link">See publications <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
 
-      <div class="entry-card">
-        <div class="entry-meta"><i class="fa-solid fa-bolt"></i> &nbsp;Broader Interests</div>
-        <h3>Energy Systems &amp; Thermal Analysis</h3>
+      <!-- Philosophy callout -->
+      <div class="research-callout aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-quote-left callout-quote-icon"></i>
         <p>
-          Techno-economic modeling of distributed energy systems, thermochemical
-          conversion processes, and sustainable heating technologies.
+          Physics tells you what to look for. Machine learning tells you where it hides.
+          The interesting problems live at the boundary.
         </p>
-        <div class="tag-list">
-          <span class="tag">Energy Systems</span>
-          <span class="tag">Techno-economic</span>
-          <span class="tag">Thermochemical</span>
-          <span class="tag">ANSYS Fluent</span>
+      </div>
+
+      <!-- Expertise pills -->
+      <div class="expertise-row aos-init aos-animate" data-aos="fade-up" data-aos-delay="150">
+        <span class="expertise-pill">Energy</span>
+        <span class="expertise-pill">Machine Learning</span>
+        <span class="expertise-pill">Scientific Machine Learning</span>
+        <span class="expertise-pill">Bioflow</span>
+        <span class="expertise-pill">Hemodynamics</span>
+        <span class="expertise-pill">Physics-Informed Neural Networks</span>
+        <span class="expertise-pill">Computational Modeling</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ PUBLICATIONS ══ -->
+  <section id="publications" class="section-surface" data-section-id="publications">
+    <div class="section-watermark">02</div>
+    <div class="container container--narrow">
+      <div class="section-header aos-init aos-animate" data-aos="fade-up">
+        <span class="section-label">Publications</span>
+        <h2 class="section-title">Research Output</h2>
+        <p class="section-desc">Peer-reviewed publications and conference proceedings.</p>
+      </div>
+
+      <!-- Scholar notice -->
+      <div class="scholar-notice aos-init aos-animate" data-aos="fade-up" data-aos-delay="50">
+        <i class="ai ai-google-scholar"></i>
+        <span>For a complete and current list, visit my</span>
+        <a href="https://scholar.google.com/citations?user=b01hEVcAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar profile <i class="fas fa-external-link-alt"></i></a>
+      </div>
+
+      <!-- Publication entry -->
+      <div class="pub-list">
+        <!-- 2026 USNCTAM: Upreti first author -->
+        <div class="pub-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+          <div class="pub-year">2026</div>
+          <div class="pub-body">
+            <span class="pub-venue-tag">Conference Presentation</span>
+            <h3 class="pub-title">
+              State-Dependent Uncertainty in Flow-Induced Polymer Unfolding Dynamics
+            </h3>
+            <p class="pub-authors">
+              <mark class="author-highlight">Upreti, S.</mark>; Chengalrayan, S.; Usta, M.
+            </p>
+            <p class="pub-journal">
+              Presented at the 20th U.S. National Congress on Theoretical and Applied Mechanics (USNCTAM20), Physics-Based Data-Driven Modeling and Uncertainty Quantification track, Pasadena, CA, Jun 2026
+            </p>
+            <details class="pub-abstract">
+              <summary>Show abstract</summary>
+              <div class="pub-abstract-body">
+                <p>Dilute polymer suspensions interacting with hydrodynamic shear flow exhibit complex, highly nonlinear conformational dynamics arising from the interplay between flow-induced forces, internal structural constraints governing advection and reeling, and stochastic perturbations. Under shear flow, long-chain polymers undergo repeated folding, rolling, and unfolding events, giving rise to a rich spectrum of conformational states. These conformations play a critical role in determining polymer function, as folding and unfolding behavior directly influence biomechanical and biochemical activity. However, conventional scalar descriptors such as instantaneous extension length and radius of gyration are often insufficient to distinguish these states or to predict subsequent dynamical outcomes, particularly in regimes where similar global measures correspond to qualitatively different behaviors.</p>
+                <p>In this work, we leverage large-scale, physics-based direct numerical simulations of polymer–fluid interactions to generate extensive ensembles of high-dimensional, time-resolved polymer configurations. To systematically organize this complex data, polymer conformations are represented as graphs and analyzed using unsupervised, data-driven representation learning with autoencoder–decoder architectures and attention-based pooling. This approach yields low-dimensional latent embeddings that preserve essential structural and topological features, enabling consistent identification of physically meaningful conformational states, including coiled, partially extended, protruded, and extended configurations.</p>
+                <p>Uncertainty is characterized by conditioning polymer extension outcomes on learned conformational states, revealing intrinsic uncertainty in the dynamical evolution of polymers under shear flow. In particular, minimum-extension (globular) configurations are identified as metastable decision states from which polymers may evolve toward distinct macroscopic outcomes. By analyzing probability distributions of extension outcomes conditioned on state, we characterize the likelihood and range of possible extensions. This enables us to distinguish conformational states that deterministically suppress large extension and exhibit low intrinsic uncertainty from states that admit multiple competing outcomes and therefore exhibit high intrinsic uncertainty. These results illustrate how physics-based simulation ensembles can be mined to distinguish deterministic and stochastic regimes in complex flow-driven polymer dynamics.</p>
+                <p class="pub-keywords"><strong>Keywords:</strong> shear flow, polymer unfolding, conformational states, autoencoders, attention pooling, graph representation learning, uncertainty quantification, latent embedding, metastable states, direct numerical simulation</p>
+              </div>
+            </details>
+            <div class="pub-links">
+              <a href="assets/conferences/upreti-2026-usnctam-polymer-uncertainty.pdf" class="pub-link" target="_blank" rel="noopener">
+                <i class="fas fa-file-pdf"></i> Open full PDF
+              </a>
+              <a href="https://scholar.google.com/scholar?q=State-Dependent+Uncertainty+in+Flow-Induced+Polymer+Unfolding+Dynamics+Upreti" target="_blank" rel="noopener" class="pub-link">
+                <i class="ai ai-google-scholar"></i> Find on Scholar
+              </a>
+              <span class="status-tag status-completed">presented by S. Upreti</span>
+            </div>
+            <details class="pub-cite">
+              <summary>Cite this paper (BibTeX)</summary>
+              <div class="pub-cite-body">
+                <button class="pub-cite-copy" type="button" data-copy-target="cite-upreti-2026">Copy</button>
+<pre id="cite-upreti-2026">@inproceedings{upreti2026state,
+  title     = {State-Dependent Uncertainty in Flow-Induced Polymer Unfolding Dynamics},
+  author    = {Upreti, Saugat and Chengalrayan, Sruthi and Usta, Mustafa},
+  booktitle = {20th U.S. National Congress on Theoretical and Applied Mechanics (USNCTAM20)},
+  year      = {2026},
+  month     = jun,
+  address   = {Pasadena, CA, USA},
+  note      = {Physics-Based Data-Driven Modeling and Uncertainty Quantification track}
+}</pre>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <!-- 2026 USNCTAM: Chengalrayan first author, Upreti co-author -->
+        <div class="pub-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="150">
+          <div class="pub-year">2026</div>
+          <div class="pub-body">
+            <span class="pub-venue-tag">Conference Presentation</span>
+            <h3 class="pub-title">
+              Biofluid Mechanics of Von Willebrand Factor Interactions with Extracellular Vesicles
+            </h3>
+            <p class="pub-authors">
+              Chengalrayan, S.; <mark class="author-highlight">Upreti, S.</mark>; Usta, M.
+            </p>
+            <p class="pub-journal">
+              Presented at the 20th U.S. National Congress on Theoretical and Applied Mechanics (USNCTAM20), Bio-Fluid Mechanics track, Pasadena, CA, Jun 2026
+            </p>
+            <details class="pub-abstract">
+              <summary>Show abstract</summary>
+              <div class="pub-abstract-body">
+                <p>The mechanics of deformable biological macromolecules is central to many physiological processes, yet remains poorly understood when multiple physical interactions coexist. A prominent example is von Willebrand Factor (vWF), a large multimeric polymer whose conformation is altered under shear and extensional flow, transitioning from a compact globular structure to an extended conformation as hydrodynamic forces overcome internal elastic resistance. A key feature of vWF is its A1 domain, which governs interactions with other biomolecules and surfaces through electrostatic charges. In blood flow, vWF coexists with extracellular vesicles (EVs), nanoscale particles with negatively charged surfaces, introducing long-range electrostatic interactions into an already complex fluid-structure system. How these interactions alter polymer dynamics under flow remains an open question in biofluid mechanics.</p>
+                <p>Here, we investigate coupled hydrodynamic and electrostatic mechanics of a flexible polymer interacting with charged particles in shear flow using multiscale multiphase direct numerical simulations. The polymer is modelled as a bead-spring chain coupled to the lattice Boltzmann solver through Langevin dynamics, enabling resolution of polymer elasticity, hydrodynamic interactions, and thermal fluctuations. Suspended particles representing EVs interact with the polymer through long-range electrostatic coupling. This unified, two-way coupled framework enables systematic analysis of flow-dependent interaction regimes governing polymer conformational dynamics.</p>
+                <p>The results demonstrate that polymer conformation is governed by a balance between shear-induced hydrodynamic stretching and electrostatic restoring interactions arising from oppositely charged particle–polymer interactions. In the absence of electrostatic interactions, polymer unfolding occurs when hydrodynamic forces exceed the intrinsic elastic restoring force, defining a critical shear rate for extension. The presence of charged particles introduces an additional electrostatic contribution to the effective restoring force, stabilizing compact polymer configurations and shifting the critical shear rate for unfolding to higher values. This stabilization effect increases with particle concentration. As the imposed shear rate increases beyond this modified threshold, hydrodynamic forces dominate the force balance, reducing particle–polymer proximity and weakening electrostatic interaction energy. Under these conditions, electrostatic stabilization becomes ineffective, and the polymer undergoes sustained elongation. Simulations with neutral particles serve as a control case and exhibit no measurable shift in the critical shear rate or conformational statistics, confirming that the observed stabilization and threshold shift arise from electrostatic–hydrodynamic coupling rather than purely hydrodynamic interactions. These results demonstrate how charged particles modify flow-induced conformational dynamics of flexible macromolecules and provide a mechanics framework for understanding polymer behavior in complex biological flows where electrostatic interactions coexist with hydrodynamic forcing.</p>
+                <p class="pub-keywords"><strong>Keywords:</strong> von Willebrand factor, extracellular vesicles, electrostatic interactions, bead-spring chain, lattice Boltzmann method, hydrodynamic shear flow, critical shear rate, multiphase simulation, biofluid mechanics, A1 domain</p>
+              </div>
+            </details>
+            <div class="pub-links">
+              <a href="assets/conferences/chengalrayan-2026-usnctam-vwf-ev.pdf" class="pub-link" target="_blank" rel="noopener">
+                <i class="fas fa-file-pdf"></i> Open full PDF
+              </a>
+              <a href="https://scholar.google.com/scholar?q=Biofluid+Mechanics+Von+Willebrand+Factor+Extracellular+Vesicles+Chengalrayan" target="_blank" rel="noopener" class="pub-link">
+                <i class="ai ai-google-scholar"></i> Find on Scholar
+              </a>
+              <span class="status-tag status-completed">co-author · presented by S. Chengalrayan</span>
+            </div>
+            <details class="pub-cite">
+              <summary>Cite this paper (BibTeX)</summary>
+              <div class="pub-cite-body">
+                <button class="pub-cite-copy" type="button" data-copy-target="cite-chengalrayan-2026">Copy</button>
+<pre id="cite-chengalrayan-2026">@inproceedings{chengalrayan2026biofluid,
+  title     = {Biofluid Mechanics of Von Willebrand Factor Interactions with Extracellular Vesicles},
+  author    = {Chengalrayan, Sruthi and Upreti, Saugat and Usta, Mustafa},
+  booktitle = {20th U.S. National Congress on Theoretical and Applied Mechanics (USNCTAM20)},
+  year      = {2026},
+  month     = jun,
+  address   = {Pasadena, CA, USA},
+  note      = {Bio-Fluid Mechanics track}
+}</pre>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <!-- 2025 USNCCM17 poster -->
+        <div class="pub-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+          <div class="pub-year">2025</div>
+          <div class="pub-body">
+            <span class="pub-venue-tag">Conference Poster</span>
+            <h3 class="pub-title">
+              Data-Driven Discovery of Polymer Shape Dynamics in Hydrodynamic Environments
+            </h3>
+            <p class="pub-authors">
+              <mark class="author-highlight">Upreti, S.</mark>; Chengalrayan, S.; Usta, M.
+            </p>
+            <p class="pub-journal">
+              Poster presented at the 17th U.S. National Congress on Computational Mechanics (USNCCM17), Jul 2025
+            </p>
+            <div class="pub-links">
+              <a href="https://scholar.google.com/scholar?q=Data-Driven+Discovery+of+Polymer+Shape+Dynamics+in+Hydrodynamic+Environments+Upreti" target="_blank" rel="noopener" class="pub-link">
+                <i class="ai ai-google-scholar"></i> Find on Scholar
+              </a>
+              <span class="status-tag status-completed">presented at conference</span>
+            </div>
+            <details class="pub-cite">
+              <summary>Cite this paper (BibTeX)</summary>
+              <div class="pub-cite-body">
+                <button class="pub-cite-copy" type="button" data-copy-target="cite-upreti-2025">Copy</button>
+<pre id="cite-upreti-2025">@inproceedings{upreti2025data,
+  title     = {Data-Driven Discovery of Polymer Shape Dynamics in Hydrodynamic Environments},
+  author    = {Upreti, Saugat and Chengalrayan, Sruthi and Usta, Mustafa},
+  booktitle = {17th U.S. National Congress on Computational Mechanics (USNCCM17)},
+  year      = {2025},
+  month     = jul,
+  note      = {Poster}
+}</pre>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <!-- 2023 IOP -->
+        <div class="pub-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="250">
+          <div class="pub-year">2023</div>
+          <div class="pub-body">
+            <span class="pub-venue-tag">Conference Paper</span>
+            <h3 class="pub-title">
+              Techno-Economic Analysis of Energy Systems in Thakle Namuna Basti: A Case Study of Distributed Energy System Planning in Rural Nepal
+            </h3>
+            <p class="pub-authors">
+              Shah, M.; Koirala, K.; <mark class="author-highlight">Upreti, S.</mark>; Sanjel, N.
+            </p>
+            <p class="pub-journal">
+              IOP Conference Series: Materials Science and Engineering, Vol. 1279, No. 1, Article 012007
+            </p>
+            <details class="pub-abstract">
+              <summary>Show abstract</summary>
+              <div class="pub-abstract-body">
+                <p>The electrical supply system in most underdeveloped nations is incredibly undependable. The country's existing distribution system has experienced regular power outages due to population growth, industrial expansion, rough terrain, and a long-distance transmission network. The conventional approach to centralized generation and transmission is failing to address this challenge, and as a response, the utilization of renewable energy sources is expanding day by day to alleviate the energy crisis.</p>
+                <p>The purpose of this study is to perform a techno-economic analysis of a 100% renewable off-grid and on-grid hybrid energy system for the electrification of Thakle Namuna Basti, a small communal village in Melamchi, Sindhupalchok. The HOMER Pro 3.14 program is used to analyze the feasibility of the suggested hybrid power system. The available resources are provided as input parameters along with load data, and HOMER Pro optimizes the list of system architectures for that specific site. In addition, sensitivity analysis is performed for the proposed HES (Hybrid Energy System).</p>
+                <p>The main outcome of the project is to find the best system architecture based on various economic parameters such as Net Present Cost (NPC), Levelized Cost of Electricity (LCOE), and Operating and Maintenance Cost. The system with the lowest NPC and LCOE constitutes the best system architecture.</p>
+                <p class="pub-keywords"><strong>Keywords:</strong> hybrid energy system, HOMER Pro, off-grid electrification, on-grid hybrid system, rural Nepal, techno-economic analysis, Net Present Cost, Levelized Cost of Electricity, renewable energy, distributed energy system, micro-grid, solar PV, biomass, energy access, Sindhupalchok, Melamchi</p>
+              </div>
+            </details>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1088/1757-899X/1279/1/012007" target="_blank" rel="noopener" class="pub-link">
+                <i class="fas fa-external-link-alt"></i> DOI
+              </a>
+              <a href="assets/cv/Shah_2023_IOP.pdf" class="pub-link" target="_blank" rel="noopener">
+                <i class="fas fa-file-pdf"></i> Open full PDF
+              </a>
+              <a href="https://scholar.google.com/scholar?q=Techno-Economic+Analysis+Thakle+Namuna+Basti+Distributed+Energy+Rural+Nepal" target="_blank" rel="noopener" class="pub-link">
+                <i class="ai ai-google-scholar"></i> Find on Scholar
+              </a>
+            </div>
+            <details class="pub-cite">
+              <summary>Cite this paper (BibTeX)</summary>
+              <div class="pub-cite-body">
+                <button class="pub-cite-copy" type="button" data-copy-target="cite-shah-2023">Copy</button>
+<pre id="cite-shah-2023">@article{shah2023technoeconomic,
+  title     = {Techno-Economic Analysis of Energy Systems in Thakle Namuna Basti: A Case Study of Distributed Energy System Planning in Rural Nepal},
+  author    = {Shah, M. and Koirala, K. and Upreti, S. and Sanjel, N.},
+  journal   = {IOP Conference Series: Materials Science and Engineering},
+  volume    = {1279},
+  number    = {1},
+  pages     = {012007},
+  year      = {2023},
+  publisher = {IOP Publishing},
+  doi       = {10.1088/1757-899X/1279/1/012007},
+  url       = {https://doi.org/10.1088/1757-899X/1279/1/012007}
+}</pre>
+              </div>
+            </details>
+          </div>
         </div>
       </div>
-    </section>
 
-    <!-- Contact strip -->
-    <section class="card reveal">
-      <h2 class="section-title">Connect</h2>
+      <div class="scholar-cta aos-init aos-animate" data-aos="fade-up">
+        <a href="https://scholar.google.com/citations?user=b01hEVcAAAAJ&amp;hl=en" target="_blank" rel="noopener" class="btn btn-outline">
+          <i class="ai ai-google-scholar"></i> More on Google Scholar
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ PROJECTS ══ -->
+  <section id="projects" class="section-deep" data-section-id="projects">
+    <div class="section-watermark">03</div>
+    <div class="container">
+      <div class="section-header aos-init aos-animate" data-aos="fade-up">
+        <span class="section-label">Projects</span>
+        <h2 class="section-title">Selected Work</h2>
+        <p class="section-desc">Research projects, engineering designs, and computational studies.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Featured: vWF -->
+        <div class="project-card project-card--featured aos-init aos-animate" data-aos="fade-up" data-aos-delay="50">
+          <div class="project-card-top">
+            <div class="project-meta">
+              <span class="status-tag status-active">active</span>
+              <span class="project-year">2023–Present</span>
+            </div>
+            <h3 class="project-title">vWF Polymer Latent-Space Analysis</h3>
+            <p class="project-desc">
+              Bead-spring model simulation of vWF polymer chains under Couette flow,
+              combined with deep autoencoders to learn latent representations of chain conformation.
+              Applies UMAP and t-SNE for dimensionality reduction to reveal coil-to-stretch transition
+              dynamics in a low-dimensional embedding space.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Python</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">UMAP</span>
+              <span class="tag">autoencoders</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">Matplotlib</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="https://github.com/SaugatUpreti" target="_blank" rel="noopener" class="project-link">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Techno-economic -->
+        <div class="project-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-card-top">
+            <div class="project-meta">
+              <span class="status-tag status-published">published</span>
+              <span class="project-year">2022–2023</span>
+            </div>
+            <h3 class="project-title">Techno-Economic Analysis of Rural Micro-Energy Systems</h3>
+            <p class="project-desc">
+              Comprehensive techno-economic modeling of distributed energy infrastructure for
+              Thakle Namuna Basti, a rural community in Nepal. Resulted in a published case study
+              in IOP Conference Series.
+            </p>
+            <div class="tag-row">
+              <span class="tag tag-warm">MATLAB</span>
+              <span class="tag tag-warm">energy modeling</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="https://doi.org/10.1088/1757-899X/1279/1/012007" target="_blank" rel="noopener" class="project-link">
+              <i class="fas fa-external-link-alt"></i> Publication
+            </a>
+          </div>
+        </div>
+
+        <!-- Pyrolytic system -->
+        <div class="project-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="150">
+          <div class="project-card-top">
+            <div class="project-meta">
+              <span class="status-tag status-done">completed</span>
+              <span class="project-year">2021–2022</span>
+            </div>
+            <h3 class="project-title">Pyrolytic System for Liquid Smoke Production</h3>
+            <p class="project-desc">
+              Design and analysis of a pyrolytic reactor system optimized for producing liquid
+              smoke from biomass feedstock. Included CFD analysis, structural design, and
+              thermodynamic performance evaluation.
+            </p>
+            <div class="tag-row">
+              <span class="tag tag-warm">SolidWorks</span>
+              <span class="tag tag-warm">CFD</span>
+              <span class="tag tag-warm">thermodynamics</span>
+            </div>
+          </div>
+          <div class="project-card-footer"></div>
+        </div>
+
+        <!-- Cookstove + GSHP -->
+        <div class="project-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-card-top">
+            <div class="project-meta">
+              <span class="status-tag status-done">completed</span>
+              <span class="project-year">2021</span>
+            </div>
+            <h3 class="project-title">Advanced Biomass Cookstove &amp; Ground-Source Heat Pump</h3>
+            <p class="project-desc">
+              Simulation-driven design of an advanced biomass cookstove with improved combustion
+              efficiency and a ground-source heat pump system for sustainable residential heating
+              in cold climates.
+            </p>
+            <div class="tag-row">
+              <span class="tag tag-warm">ANSYS Fluent</span>
+              <span class="tag tag-warm">heat transfer</span>
+              <span class="tag tag-warm">combustion</span>
+            </div>
+          </div>
+          <div class="project-card-footer"></div>
+        </div>
+
+        <!-- Experimental prototypes -->
+        <div class="project-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="250">
+          <div class="project-card-top">
+            <div class="project-meta">
+              <span class="status-tag status-done">completed</span>
+              <span class="project-year">2019–2022</span>
+            </div>
+            <h3 class="project-title">Experimental Mechanical Prototypes</h3>
+            <p class="project-desc">
+              A collection of undergraduate experimental and design projects including energy
+              audits, fluid mechanics experiments, vibration analysis, and material testing
+              carried out at Kathmandu University laboratories.
+            </p>
+            <div class="tag-row">
+              <span class="tag tag-warm">prototyping</span>
+              <span class="tag tag-warm">experimental work</span>
+              <span class="tag tag-warm">lab testing</span>
+            </div>
+          </div>
+          <div class="project-card-footer"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ AWARDS ══ -->
+  <section id="awards" class="section-surface" data-section-id="awards">
+    <div class="section-watermark">04</div>
+    <div class="container">
+      <div class="section-header aos-init aos-animate" data-aos="fade-up">
+        <span class="section-label">Honors &amp; Awards</span>
+        <h2 class="section-title">Recognition</h2>
+        <p class="section-desc">Academic honors, scholarships, and professional recognitions received throughout my career.</p>
+      </div>
+
+      <div class="awards-grid">
+
+        <div class="award-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="50">
+          <div class="award-icon-wrap">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="award-body">
+            <span class="award-year">2026–2027</span>
+            <h3 class="award-title">Graduate Student Research Award (GSRA)</h3>
+            <p class="award-org">Cleveland State University · Office of Research</p>
+            <p class="award-desc">Competitive university-wide award supporting the dissertation project <em>"Topology-Aware Representation Learning of von Willebrand Factor Conformations under Shear Flow"</em> in the Washkewicz College of Engineering.</p>
+            <p class="award-links">
+              <a href="https://www.csuohio.edu/research/2026-2027-graduate-student-research-award-gsra-award-announcement" target="_blank" rel="noopener" class="award-link">Official announcement <i class="fas fa-external-link-alt"></i></a>
+            </p>
+          </div>
+        </div>
+
+        <div class="award-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+          <div class="award-icon-wrap">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="award-body">
+            <span class="award-year">2023–present</span>
+            <h3 class="award-title">Graduate Research Assistantship</h3>
+            <p class="award-org">Cleveland State University · Washkewicz College of Engineering</p>
+            <p class="award-desc">Full funding for doctoral research in scientific machine learning and polymer physics simulation at the Department of Mechanical Engineering, CSU.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ TEACHING ══ -->
+  <section id="teaching" class="section-deep" data-section-id="teaching">
+    <div class="section-watermark">05</div>
+    <div class="container">
+      <div class="section-header aos-init" data-aos="fade-up">
+        <span class="section-label">Teaching</span>
+        <h2 class="section-title">Academic Instruction</h2>
+        <p class="section-desc">Supporting undergraduate and graduate students in thermodynamics and heat transfer.</p>
+      </div>
+
+      <div class="teaching-grid">
+        <!-- Role card -->
+        <div class="teaching-role-card aos-init" data-aos="fade-left" data-aos-delay="100">
+          <div class="role-icon">
+            <i class="fas fa-chalkboard-teacher"></i>
+          </div>
+          <h3 class="role-title">Graduate Teaching Assistant</h3>
+          <p class="role-org">Department of Mechanical Engineering</p>
+          <p class="role-university">Cleveland State University</p>
+          <span class="role-period">Aug 2023 – Present</span>
+          <p class="role-desc">
+            Deliver recitations, hold weekly office hours, grade assignments and exams,
+            and support student learning across thermodynamics and heat transfer courses
+            at both undergraduate and graduate levels.
+          </p>
+        </div>
+
+        <!-- Courses -->
+        <div class="teaching-courses aos-init" data-aos="fade-right" data-aos-delay="150">
+          <div class="course-item" data-reveal="">
+            <div class="course-content">
+              <div class="course-code">MCE 421 / 521</div>
+              <h4 class="course-name">Applied Thermodynamics</h4>
+              <p class="course-level">Undergraduate &amp; Graduate</p>
+              <p class="course-desc">Power cycles, refrigeration systems, psychrometrics, and combustion analysis. Bridging classical thermodynamics with real engineering applications.</p>
+              <div class="tag-row">
+                <span class="tag tag-sm">power cycles</span>
+                <span class="tag tag-sm">refrigeration</span>
+                <span class="tag tag-sm">combustion</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-item" data-reveal="">
+            <div class="course-content">
+              <div class="course-code">MCE 341</div>
+              <h4 class="course-name">Engineering Thermodynamics I</h4>
+              <p class="course-level">Undergraduate</p>
+              <p class="course-desc">Foundational thermodynamics: properties of pure substances, first and second law analysis, entropy, and availability concepts.</p>
+              <div class="tag-row">
+                <span class="tag tag-sm">first law</span>
+                <span class="tag tag-sm">entropy</span>
+                <span class="tag tag-sm">pure substances</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-item" data-reveal="">
+            <div class="course-content">
+              <div class="course-code">MCE 342</div>
+              <h4 class="course-name">Heat Transfer</h4>
+              <p class="course-level">Undergraduate</p>
+              <p class="course-desc">Conduction, convection, and radiation heat transfer. Includes analytical and numerical methods for thermal system analysis.</p>
+              <div class="tag-row">
+                <span class="tag tag-sm">conduction</span>
+                <span class="tag tag-sm">convection</span>
+                <span class="tag tag-sm">radiation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Teaching philosophy -->
+      <div class="research-callout aos-init" data-aos="fade-up" data-aos-delay="100" style="margin-top: 3rem;">
+        <i class="fas fa-quote-left callout-quote-icon"></i>
+        <p>
+          The goal is for students to leave with intuition, not just technique. They should know
+          why an answer makes physical sense before they check the numbers.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ CV ══ -->
+  <section id="cv" class="section-surface" data-section-id="cv">
+    <div class="section-watermark">06</div>
+    <div class="container">
+      <div class="section-header aos-init" data-aos="fade-up">
+        <span class="section-label">Curriculum Vitae</span>
+        <h2 class="section-title">Background</h2>
+        <p class="section-desc">Education, experience, and technical skills.</p>
+      </div>
+
+      <!-- Skills -->
+      <div class="skills-grid aos-init" data-aos="fade-up" data-aos-delay="50">
+        <div class="skill-category">
+          <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
+          <h4 class="skill-cat-title">Programming</h4>
+          <div class="tag-row">
+            <span class="tag">Python</span>
+            <span class="tag">MATLAB</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">scikit-learn</span>
+            <span class="tag">pandas</span>
+            <span class="tag">Matplotlib</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-icon"><i class="fas fa-cogs"></i></div>
+          <h4 class="skill-cat-title">Engineering Software</h4>
+          <div class="tag-row">
+            <span class="tag tag-warm">SolidWorks</span>
+            <span class="tag tag-warm">ANSYS Fluent</span>
+            <span class="tag tag-warm">MS Office</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-icon"><i class="fas fa-flask"></i></div>
+          <h4 class="skill-cat-title">Research Methods</h4>
+          <div class="tag-row">
+            <span class="tag">machine learning</span>
+            <span class="tag">dimensionality reduction</span>
+            <span class="tag">CFD simulation</span>
+            <span class="tag">techno-economic modeling</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <div class="timeline-wrap aos-init" data-aos="fade-up" data-aos-delay="100">
+        <div class="timeline-line" id="timelineLine"></div>
+
+        <div class="timeline-entry timeline-entry--left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-period">2023 – Present</span>
+            <h4 class="timeline-title">Ph.D. Mechanical Engineering</h4>
+            <p class="timeline-org">Cleveland State University</p>
+            <ul class="timeline-bullets">
+              <li>vWF polymer dynamics under shear flow</li>
+              <li>Scientific machine learning &amp; autoencoders</li>
+              <li>Graduate Research &amp; Teaching Assistant</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-entry timeline-entry--right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-period">Mar – Jul 2023</span>
+            <h4 class="timeline-title">Research Assistant</h4>
+            <p class="timeline-org">Organic Farming Centre, Nepal</p>
+            <ul class="timeline-bullets">
+              <li>Contributed to energy system assessment</li>
+              <li>Supported publication of IOP conference paper</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-entry timeline-entry--left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-period">2017 – 2022</span>
+            <h4 class="timeline-title">B.E. Mechanical Engineering</h4>
+            <p class="timeline-org">Kathmandu University · GPA: 3.49 / 4.00</p>
+            <ul class="timeline-bullets">
+              <li>Capstone: Pyrolytic system design</li>
+              <li>Projects: Cookstove, GSHP, energy audits</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div class="languages-row aos-init" data-aos="fade-up" data-aos-delay="150">
+        <div class="language-item">
+          <span class="language-flag">🇺🇸</span>
+          <span class="language-name">English</span>
+          <span class="tag">proficient</span>
+        </div>
+        <div class="language-item">
+          <span class="language-flag">🇳🇵</span>
+          <span class="language-name">Nepali</span>
+          <span class="tag">native</span>
+        </div>
+        <div class="language-item">
+          <span class="language-flag">🇮🇳</span>
+          <span class="language-name">Hindi</span>
+          <span class="tag">intermediate</span>
+        </div>
+      </div>
+
+      <!-- Download CV -->
+      <div class="cv-download-wrap aos-init" data-aos="fade-up">
+        <a href="assets/cv/saugat-upreti-cv.pdf" class="btn btn-primary btn-lg" download="">
+          <i class="fas fa-file-download"></i> Download Full CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ CONTACT ══ -->
+  <section id="contact" class="section-deep" data-section-id="contact">
+    <div class="section-watermark">07</div>
+    <div class="container">
+      <div class="section-header aos-init" data-aos="fade-up">
+        <span class="section-label">Get in Touch</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-desc">Open to research collaborations, academic discussions, and professional opportunities.</p>
+      </div>
+
       <div class="contact-grid">
-        <a class="contact-item" href="mailto:Upretisaugat1@gmail.com">
-          <i class="fa-solid fa-envelope"></i><span>Email</span>
-        </a>
-        <a class="contact-item" href="https://scholar.google.com/citations?user=b01hEVcAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
-          <i class="fa-solid fa-graduation-cap"></i><span>Google Scholar</span>
-        </a>
-        <a class="contact-item" href="https://www.researchgate.net/profile/Saugat-Upreti?ev=hdr_xprf/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-researchgate"></i><span>ResearchGate</span>
-        </a>
-        <a class="contact-item" href="https://www.linkedin.com/in/saugat-upreti/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-linkedin"></i><span>LinkedIn</span>
-        </a>
-        <a class="contact-item" href="https://github.com/SaugatUpreti" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-github"></i><span>GitHub</span>
-        </a>
+        <div class="contact-copy aos-init" data-aos="fade-right" data-aos-delay="50">
+          <p>
+            Whether you're a fellow researcher interested in scientific ML and polymer physics,
+            a student looking for guidance, or someone with an interesting collaboration idea,
+            feel free to reach out. I'm always happy to connect.
+          </p>
+          <p>
+            The best way to reach me is via email. I also respond promptly on LinkedIn
+            for professional inquiries.
+          </p>
+        </div>
+
+        <div class="contact-links-grid aos-init" data-aos="fade-left" data-aos-delay="100">
+          <a href="mailto:Upretisaugat1@gmail.com" class="contact-card">
+            <i class="fas fa-envelope contact-icon"></i>
+            <span class="contact-card-label">Email</span>
+            <span class="contact-card-value">Upretisaugat1@gmail.com</span>
+          </a>
+          <a href="https://scholar.google.com/citations?user=b01hEVcAAAAJ&amp;hl=en" target="_blank" rel="noopener" class="contact-card">
+            <i class="ai ai-google-scholar contact-icon"></i>
+            <span class="contact-card-label">Google Scholar</span>
+            <span class="contact-card-value">View Publications →</span>
+          </a>
+          <a href="https://www.researchgate.net/profile/Saugat-Upreti" target="_blank" rel="noopener" class="contact-card">
+            <i class="ai ai-researchgate contact-icon"></i>
+            <span class="contact-card-label">ResearchGate</span>
+            <span class="contact-card-value">Research Profile →</span>
+          </a>
+          <a href="https://www.linkedin.com/in/saugat-upreti/" target="_blank" rel="noopener" class="contact-card">
+            <i class="fab fa-linkedin-in contact-icon"></i>
+            <span class="contact-card-label">LinkedIn</span>
+            <span class="contact-card-value">Connect →</span>
+          </a>
+          <a href="https://github.com/SaugatUpreti" target="_blank" rel="noopener" class="contact-card">
+            <i class="fab fa-github contact-icon"></i>
+            <span class="contact-card-label">GitHub</span>
+            <span class="contact-card-value">@SaugatUpreti →</span>
+          </a>
+          <div class="contact-card contact-card--static">
+            <i class="fas fa-map-marker-alt contact-icon"></i>
+            <span class="contact-card-label">Location</span>
+            <span class="contact-card-value">Cleveland, Ohio, USA</span>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </main>
-</div>
+  <!-- ═══════════════════════════════════════════ FOOTER ══ -->
+  <footer class="footer">
+    <p>Built with pure HTML · CSS · JS &nbsp;·&nbsp; © 2025 Saugat Upreti</p>
+  </footer>
 
-<script src="assets/polymer.js"></script>
-<script src="assets/main.js"></script>
-</body>
-</html>
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+  <!-- ═══════════════ POLYMER TWEAKS PANEL ═══════════════ -->
+  <div id="polyTweaks" class="poly-tweaks" aria-label="Polymer tweaks">
+    <button class="pt-toggle" id="ptToggle" aria-label="Toggle polymer tweaks">
+      <i class="fas fa-sliders-h"></i>
+      <span>Polymer</span>
+    </button>
+    <div class="pt-body" id="ptBody">
+      <div class="pt-head">
+        <h4>Background Polymer</h4>
+        <button class="pt-close" id="ptClose" aria-label="Close">×</button>
+      </div>
+
+      <div class="pt-row">
+        <div class="pt-label"><span>Shear intensity</span><span class="pt-val" id="ptShearVal">2.20×</span></div>
+        <input type="range" id="ptShear" min="0" max="3" step="0.05" value="1">
+        <div class="pt-hint">More shear → chains stretch into red filaments</div>
+      </div>
+
+      <div class="pt-row">
+        <div class="pt-label"><span>Red chain ratio</span><span class="pt-val" id="ptRedVal">11%</span></div>
+        <input type="range" id="ptRed" min="0" max="1" step="0.01" value="0.3">
+        <div class="pt-hint">Fraction of chains forced into high-shear (red) state</div>
+      </div>
+
+      <div class="pt-row">
+        <div class="pt-label"><span>Chain count</span><span class="pt-val" id="ptCountVal">18</span></div>
+        <input type="range" id="ptCount" min="2" max="30" step="1" value="10">
+      </div>
+
+      <div class="pt-row">
+        <div class="pt-label"><span>Opacity</span><span class="pt-val" id="ptOpacityVal">110%</span></div>
+        <input type="range" id="ptOpacity" min="0.1" max="1.5" step="0.05" value="1">
+      </div>
+
+      <div class="pt-row">
+        <div class="pt-label"><span>Trail fade</span><span class="pt-val" id="ptFadeVal">0.75</span></div>
+        <input type="range" id="ptFade" min="0.4" max="1" step="0.01" value="0.85">
+        <div class="pt-hint">Lower → longer motion trails</div>
+      </div>
+
+      <div class="pt-presets">
+        <button class="pt-chip" data-ppreset="calm">Calm</button>
+        <button class="pt-chip" data-ppreset="default">Default</button>
+        <button class="pt-chip pt-chip--active" data-ppreset="storm">Storm</button>
+        <button class="pt-chip" data-ppreset="allred">All Red</button>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .poly-tweaks {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 60;
+      font-family: var(--font-mono, 'JetBrains Mono', monospace);
+    }
+    .pt-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.55rem 0.9rem;
+      background: var(--accent, #1e3a6e);
+      color: #fff;
+      border: 0;
+      border-radius: 24px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform .2s, background .2s;
+    }
+    .pt-toggle:hover { transform: translateY(-1px); background: var(--accent-mid, #2d5299); }
+    .pt-body {
+      position: absolute;
+      bottom: calc(100% + 10px);
+      right: 0;
+      width: 280px;
+      background: #fff;
+      border: 1px solid var(--bg-border, #d8d4cc);
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+      padding: 0.5rem 0;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(8px);
+      transition: all .25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .poly-tweaks.open .pt-body { opacity: 1; pointer-events: auto; transform: translateY(0); }
+    .pt-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 1rem 0.75rem;
+      border-bottom: 1px solid var(--bg-border-light, #e8e5df);
+      margin-bottom: 0.5rem;
+    }
+    .pt-head h4 {
+      font-family: var(--font-heading, 'EB Garamond', serif);
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0;
+      color: var(--text-primary, #1a1814);
+    }
+    .pt-close {
+      background: none;
+      border: 0;
+      font-size: 1.2rem;
+      color: var(--text-muted, #908880);
+      cursor: pointer;
+      line-height: 1;
+      padding: 0 4px;
+    }
+    .pt-close:hover { color: var(--text-primary, #1a1814); }
+    .pt-row { padding: 0.6rem 1rem; }
+    .pt-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-secondary, #4a453e);
+      margin-bottom: 0.35rem;
+    }
+    .pt-val { color: var(--accent, #1e3a6e); font-weight: 500; }
+    .pt-row input[type="range"] {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 3px;
+      background: var(--bg-raised, #eeecea);
+      border-radius: 2px;
+      outline: none;
+    }
+    .pt-row input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 14px; height: 14px;
+      border-radius: 50%;
+      background: var(--accent, #1e3a6e);
+      border: 2px solid #fff;
+      box-shadow: 0 0 0 1px var(--accent, #1e3a6e);
+      cursor: grab;
+    }
+    .pt-row input[type="range"]::-moz-range-thumb {
+      width: 14px; height: 14px;
+      border-radius: 50%;
+      background: var(--accent, #1e3a6e);
+      border: 2px solid #fff;
+      cursor: grab;
+    }
+    .pt-hint {
+      font-size: 0.65rem;
+      color: var(--text-muted, #908880);
+      margin-top: 0.3rem;
+      font-style: italic;
+      font-family: var(--font-body, serif);
+    }
+    .pt-presets {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      padding: 0.5rem 1rem 0.75rem;
+      border-top: 1px solid var(--bg-border-light, #e8e5df);
+      margin-top: 0.25rem;
+    }
+    .pt-chip {
+      padding: 0.3rem 0.6rem;
+      font-family: inherit;
+      font-size: 0.7rem;
+      background: var(--bg-surface, #f7f6f2);
+      border: 1px solid var(--bg-border, #d8d4cc);
+      border-radius: 4px;
+      color: var(--text-secondary, #4a453e);
+      cursor: pointer;
+      transition: all .15s;
+    }
+    .pt-chip:hover { border-color: var(--accent, #1e3a6e); color: var(--accent, #1e3a6e); }
+    .pt-chip--active {
+      background: var(--accent, #1e3a6e);
+      color: #fff;
+      border-color: var(--accent, #1e3a6e);
+    }
+    @media (max-width: 600px) {
+      .poly-tweaks { bottom: 12px; right: 12px; }
+      .pt-body { width: 250px; }
+    }
+  </style>
+
+  <script>
+  (function() {
+    // Defaults
+    window.POLYMER_TWEAKS = {
+      shearMul: 1, shearBase: 0.015,
+      redRatio: 0.3,
+      count: 10,
+      opacity: 1,
+      fade: 0.85
+    };
+
+    var panel   = document.getElementById('polyTweaks');
+    var toggle  = document.getElementById('ptToggle');
+    var closeB  = document.getElementById('ptClose');
+    var shear   = document.getElementById('ptShear');
+    var red     = document.getElementById('ptRed');
+    var count   = document.getElementById('ptCount');
+    var opacity = document.getElementById('ptOpacity');
+    var fade    = document.getElementById('ptFade');
+
+    var shearVal = document.getElementById('ptShearVal');
+    var redVal   = document.getElementById('ptRedVal');
+    var countVal = document.getElementById('ptCountVal');
+    var opVal    = document.getElementById('ptOpacityVal');
+    var fadeVal  = document.getElementById('ptFadeVal');
+
+    toggle.addEventListener('click', function() { panel.classList.toggle('open'); });
+    closeB.addEventListener('click', function() { panel.classList.remove('open'); });
+
+    function applyStructure() {
+      window.POLYMER_TWEAKS.count = parseInt(count.value, 10);
+      window.POLYMER_TWEAKS.redRatio = parseFloat(red.value);
+      if (window.__polymerRebuild) window.__polymerRebuild();
+    }
+    function applyLive() {
+      window.POLYMER_TWEAKS.shearMul = parseFloat(shear.value);
+      window.POLYMER_TWEAKS.opacity = parseFloat(opacity.value);
+      window.POLYMER_TWEAKS.fade = parseFloat(fade.value);
+    }
+
+    shear.addEventListener('input', function() {
+      shearVal.textContent = parseFloat(shear.value).toFixed(2) + '×';
+      applyLive();
+    });
+    red.addEventListener('input', function() {
+      redVal.textContent = Math.round(parseFloat(red.value) * 100) + '%';
+      applyStructure();
+    });
+    count.addEventListener('input', function() {
+      countVal.textContent = count.value;
+      applyStructure();
+    });
+    opacity.addEventListener('input', function() {
+      opVal.textContent = Math.round(parseFloat(opacity.value) * 100) + '%';
+      applyLive();
+    });
+    fade.addEventListener('input', function() {
+      fadeVal.textContent = parseFloat(fade.value).toFixed(2);
+      applyLive();
+    });
+
+    // Presets
+    var presets = {
+      calm:    { shear: 0.4, red: 0.1, count: 6,  opacity: 0.7, fade: 0.9 },
+      default: { shear: 1.0, red: 0.3, count: 10, opacity: 1.0, fade: 0.85 },
+      storm:   { shear: 2.2, red: 0.6, count: 18, opacity: 1.1, fade: 0.75 },
+      allred:  { shear: 2.8, red: 1.0, count: 14, opacity: 1.0, fade: 0.8 }
+    };
+    document.querySelectorAll('[data-ppreset]').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('[data-ppreset]').forEach(function(b) {
+          b.classList.remove('pt-chip--active');
+        });
+        btn.classList.add('pt-chip--active');
+        var p = presets[btn.dataset.ppreset];
+        shear.value = p.shear;   shearVal.textContent = p.shear.toFixed(2) + '×';
+        red.value = p.red;       redVal.textContent = Math.round(p.red * 100) + '%';
+        count.value = p.count;   countVal.textContent = p.count;
+        opacity.value = p.opacity; opVal.textContent = Math.round(p.opacity * 100) + '%';
+        fade.value = p.fade;     fadeVal.textContent = p.fade.toFixed(2);
+        applyLive();
+        applyStructure();
+      });
+    });
+  })();
+  </script>
+
+  <script src="assets/js/polymer-canvas.js"></script>
+  <script src="assets/js/nav.js" defer=""></script>
+  <script src="assets/js/scroll-reveal.js" defer=""></script>
+  <script src="assets/js/typed-text.js" defer=""></script>
+
+
+<style data-typed-js-cursor-css="true">
+        .typed-cursor{
+          opacity: 1;
+        }
+        .typed-cursor.typed-cursor--blink{
+          animation: typedjsBlink 0.7s infinite;
+          -webkit-animation: typedjsBlink 0.7s infinite;
+                  animation: typedjsBlink 0.7s infinite;
+        }
+        @keyframes typedjsBlink{
+          50% { opacity: 0.0; }
+        }
+        @-webkit-keyframes typedjsBlink{
+          0% { opacity: 1; }
+          50% { opacity: 0.0; }
+          100% { opacity: 1; }
+        }
+      </style><!-- ═══════════════ Background Polymer Tweaks Panel ══ -->
+<button id="polymerFab" aria-label="Open polymer controls" title="Polymer (P)">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="5" cy="12" r="2.2"/>
+    <circle cx="12" cy="6" r="2.2"/>
+    <circle cx="19" cy="12" r="2.2"/>
+    <circle cx="12" cy="18" r="2.2"/>
+    <path d="M7 12L10 7M14 7L17 12M17 12L14 17M10 17L7 12"/>
+  </svg>
+  <span>Polymer</span>
+</button>
+
+<aside id="polymerPanel" aria-hidden="true">
+  <header>
+    <h3>Background Polymer</h3>
+    <button id="polymerClose" aria-label="Close">×</button>
+  </header>
+  <div class="pp-body">
+    <div class="pp-row">
+      <div class="pp-label"><span>Shear intensity</span><span class="pp-val" id="ppShearVal">1.15×</span></div>
+      <input type="range" id="ppShear" min="0" max="2" step="0.05" value="1.15">
+      <div class="pp-hint"><em>More shear → chains stretch into red filaments</em></div>
+    </div>
+
+    <div class="pp-row">
+      <div class="pp-label"><span>Red chain ratio</span><span class="pp-val" id="ppRedVal">100%</span></div>
+      <input type="range" id="ppRed" min="0" max="1" step="0.05" value="1">
+      <div class="pp-hint"><em>Fraction of chains forced into high-shear (red) state</em></div>
+    </div>
+
+    <div class="pp-row">
+      <div class="pp-label"><span>Chain count</span><span class="pp-val" id="ppCountVal">9</span></div>
+      <input type="range" id="ppCount" min="2" max="24" step="1" value="9">
+    </div>
+
+    <div class="pp-row">
+      <div class="pp-label"><span>Opacity</span><span class="pp-val" id="ppOpacityVal">55%</span></div>
+      <input type="range" id="ppOpacity" min="0.1" max="1.5" step="0.05" value="0.55">
+    </div>
+
+    <div class="pp-row">
+      <div class="pp-label"><span>Trail fade</span><span class="pp-val" id="ppFadeVal">1.00</span></div>
+      <input type="range" id="ppFade" min="0.2" max="1" step="0.02" value="1">
+      <div class="pp-hint"><em>Lower → longer motion trails</em></div>
+    </div>
+
+    <div class="pp-presets">
+      <button data-preset="calm">Calm</button>
+      <button data-preset="default">Default</button>
+      <button data-preset="storm" class="active">Storm</button>
+      <button data-preset="all-red">All Red</button>
+    </div>
+  </div>
+</aside>
+
+<style>
+  #polymerFab {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 70;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: none;
+    background: #1e3a6e;
+    color: #fff;
+    font: 500 13px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(30, 58, 110, 0.28), 0 1px 3px rgba(0,0,0,0.1);
+    transition: transform .2s cubic-bezier(.2,.9,.25,1), box-shadow .2s;
+  }
+  #polymerFab:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(30,58,110,0.35); }
+  #polymerFab svg { opacity: 0.9; }
+
+  #polymerPanel {
+    position: fixed;
+    right: 20px;
+    bottom: 78px;
+    z-index: 69;
+    width: 320px;
+    max-width: calc(100vw - 40px);
+    background: #ffffff;
+    border: 1px solid #e0dcd2;
+    border-radius: 10px;
+    box-shadow: 0 18px 50px rgba(0,0,0,0.14), 0 2px 8px rgba(0,0,0,0.06);
+    font: 400 13px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: #1a1814;
+    transform: translateY(12px) scale(0.98);
+    opacity: 0; pointer-events: none;
+    transition: opacity .2s, transform .25s cubic-bezier(.2,.9,.25,1);
+  }
+  #polymerPanel.open { opacity: 1; transform: translateY(0) scale(1); pointer-events: auto; }
+  #polymerPanel header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 14px 18px 12px;
+    border-bottom: 1px solid #eeebe2;
+  }
+  #polymerPanel header h3 {
+    margin: 0;
+    font: 600 15px/1.2 'EB Garamond', Georgia, serif;
+    letter-spacing: -0.005em;
+    color: #1a1814;
+  }
+  #polymerClose {
+    border: 0; background: none; cursor: pointer;
+    color: #908880; font-size: 20px; line-height: 1;
+    padding: 4px 6px; border-radius: 4px;
+    transition: background .15s, color .15s;
+  }
+  #polymerClose:hover { background: #f4f2ec; color: #1a1814; }
+
+  .pp-body { padding: 8px 18px 18px; }
+  .pp-row { padding: 14px 0; border-bottom: 1px solid #f4f2ec; }
+  .pp-row:last-of-type { border-bottom: 0; }
+  .pp-label {
+    display: flex; justify-content: space-between;
+    font-size: 10.5px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: #6b635a;
+    margin-bottom: 10px;
+  }
+  .pp-val { color: #1e3a6e; letter-spacing: 0; font-weight: 600; }
+  .pp-hint { margin-top: 6px; font-size: 11px; color: #908880; font-style: italic; }
+  .pp-hint em { font-style: italic; }
+
+  #polymerPanel input[type=range] {
+    -webkit-appearance: none; appearance: none;
+    width: 100%; height: 4px; border-radius: 2px;
+    background: #e8e4da; outline: none;
+  }
+  #polymerPanel input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; appearance: none;
+    width: 16px; height: 16px; border-radius: 50%;
+    background: #1e3a6e; border: 2px solid #fff;
+    box-shadow: 0 0 0 1px #1e3a6e, 0 2px 4px rgba(0,0,0,0.1);
+    cursor: grab;
+  }
+  #polymerPanel input[type=range]::-webkit-slider-thumb:active { cursor: grabbing; }
+  #polymerPanel input[type=range]::-moz-range-thumb {
+    width: 16px; height: 16px; border-radius: 50%;
+    background: #1e3a6e; border: 2px solid #fff;
+    box-shadow: 0 0 0 1px #1e3a6e;
+    cursor: grab;
+  }
+
+  .pp-presets {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px;
+    padding-top: 14px;
+    margin-top: 4px;
+    border-top: 1px solid #f4f2ec;
+  }
+  .pp-presets button {
+    padding: 7px 6px;
+    font: 500 11.5px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #fff;
+    color: #1a1814;
+    border: 1px solid #e0dcd2;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .15s;
+  }
+  .pp-presets button:hover { border-color: #1e3a6e; color: #1e3a6e; }
+  .pp-presets button.active { background: #1e3a6e; color: #fff; border-color: #1e3a6e; }
+
+  @media (max-width: 560px) {
+    #polymerPanel { right: 12px; left: 12px; width: auto; bottom: 72px; }
+    #polymerFab { right: 12px; bottom: 12px; }
+  }
+</style>
+
+<script>
+(function(){
+  var fab   = document.getElementById('polymerFab');
+  var panel = document.getElementById('polymerPanel');
+  var closeBtn = document.getElementById('polymerClose');
+
+  // Tweakable state, lives on window so polymer-canvas.js reads it
+  window.POLYMER_TWEAKS = {
+    shearMul:  1.15,
+    redRatio:  1.0,
+    count:     9,
+    opacity:   0.55,
+    fade:      1.0,
+    shearBase: 0.012
+  };
+
+  // Restore saved settings
+  try {
+    var saved = JSON.parse(localStorage.getItem('polymerTweaks') || 'null');
+    if (saved) Object.assign(window.POLYMER_TWEAKS, saved);
+  } catch(e){}
+
+  function save() {
+    try { localStorage.setItem('polymerTweaks', JSON.stringify(window.POLYMER_TWEAKS)); } catch(e){}
+  }
+
+  var fmt = {
+    shear:   function(v){ return (+v).toFixed(2) + '×'; },
+    red:     function(v){ return Math.round(v*100) + '%'; },
+    count:   function(v){ return String(v); },
+    opacity: function(v){ return Math.round(v*100) + '%'; },
+    fade:    function(v){ return (+v).toFixed(2); }
+  };
+
+  var bind = [
+    ['ppShear',   'ppShearVal',   'shearMul', 'shear',   false],
+    ['ppRed',     'ppRedVal',     'redRatio', 'red',     true],   // rebuild
+    ['ppCount',   'ppCountVal',   'count',    'count',   true],   // rebuild
+    ['ppOpacity', 'ppOpacityVal', 'opacity',  'opacity', false],
+    ['ppFade',    'ppFadeVal',    'fade',     'fade',    false]
+  ];
+
+  // Sync UI to current state (on open + on restore)
+  function syncUI() {
+    bind.forEach(function(b){
+      var input = document.getElementById(b[0]);
+      var label = document.getElementById(b[1]);
+      var v = window.POLYMER_TWEAKS[b[2]];
+      if (input) input.value = v;
+      if (label) label.textContent = fmt[b[3]](v);
+    });
+  }
+  syncUI();
+
+  bind.forEach(function(b){
+    var input = document.getElementById(b[0]);
+    if (!input) return;
+    input.addEventListener('input', function(e){
+      var v = +e.target.value;
+      if (b[2] === 'count') v = Math.round(v);
+      window.POLYMER_TWEAKS[b[2]] = v;
+      document.getElementById(b[1]).textContent = fmt[b[3]](v);
+      if (b[4] && typeof window.__polymerRebuild === 'function') window.__polymerRebuild();
+      save();
+      // clear active preset
+      document.querySelectorAll('.pp-presets button').forEach(function(btn){ btn.classList.remove('active'); });
+    });
+  });
+
+  // Presets
+  var presets = {
+    'calm':    { shearMul: 0.3,  redRatio: 0.1, count: 8,  opacity: 0.55, fade: 1.0 },
+    'default': { shearMul: 1.0,  redRatio: 0.3, count: 10, opacity: 0.9,  fade: 0.85 },
+    'storm':   { shearMul: 1.15, redRatio: 1.0, count: 9,  opacity: 0.55, fade: 1.0 },
+    'all-red': { shearMul: 1.5,  redRatio: 1.0, count: 12, opacity: 0.7,  fade: 0.92 }
+  };
+  document.querySelectorAll('.pp-presets button').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var p = presets[btn.dataset.preset];
+      if (!p) return;
+      Object.assign(window.POLYMER_TWEAKS, p);
+      document.querySelectorAll('.pp-presets button').forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      syncUI();
+      if (typeof window.__polymerRebuild === 'function') window.__polymerRebuild();
+      save();
+    });
+  });
+
+  // Open / close
+  function toggle(open) {
+    var show = (open === undefined) ? !panel.classList.contains('open') : open;
+    panel.classList.toggle('open', show);
+    panel.setAttribute('aria-hidden', show ? 'false' : 'true');
+  }
+  fab.addEventListener('click', function(){ toggle(); });
+  closeBtn.addEventListener('click', function(){ toggle(false); });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && panel.classList.contains('open')) toggle(false);
+    else if (e.key.toLowerCase() === 'p' && !/input|textarea/i.test((document.activeElement||{}).tagName)) {
+      toggle();
+    }
+  });
+
+  // Apply initial state to canvas (in case it already loaded)
+  if (typeof window.__polymerRebuild === 'function') window.__polymerRebuild();
+})();
+</script>
+
+<!-- BibTeX copy-to-clipboard -->
+<script>
+(function(){
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest('.pub-cite-copy');
+    if (!btn) return;
+    var id = btn.getAttribute('data-copy-target');
+    var pre = document.getElementById(id);
+    if (!pre) return;
+    var text = pre.textContent;
+    var done = function(){
+      var original = btn.textContent;
+      btn.textContent = 'Copied!';
+      btn.classList.add('copied');
+      setTimeout(function(){ btn.textContent = original; btn.classList.remove('copied'); }, 1600);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done).catch(function(){
+        // Fallback
+        var ta = document.createElement('textarea');
+        ta.value = text; document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); done(); } catch(_){}
+        document.body.removeChild(ta);
+      });
+    } else {
+      var ta = document.createElement('textarea');
+      ta.value = text; document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); done(); } catch(_){}
+      document.body.removeChild(ta);
+    }
+  });
+})();
+</script>
+
+</body></html>
