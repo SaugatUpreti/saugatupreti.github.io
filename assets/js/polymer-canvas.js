@@ -199,23 +199,25 @@
       var lum = 50;
       var alpha = (0.3 + t * 0.4) * opacityMul;
 
+      var bs = (T().beadScale && T().beadScale > 0) ? T().beadScale : 1;
+
       // Glow
       ctx.lineCap = 'round';
       ctx.lineJoin = 'round';
-      ctx.lineWidth = 14;
+      ctx.lineWidth = 14 * bs;
       ctx.strokeStyle = 'hsla(' + hue + ',' + sat + '%,' + lum + '%,' + (alpha * 0.15) + ')';
       drawPath(ch);
       ctx.stroke();
 
       // Backbone
-      ctx.lineWidth = 2.5;
+      ctx.lineWidth = 2.5 * bs;
       ctx.strokeStyle = 'hsla(' + hue + ',' + sat + '%,' + lum + '%,' + alpha + ')';
       drawPath(ch);
       ctx.stroke();
 
       // 3D-rendered beads with radial gradient + specular highlight
       for (var i = 0; i < N_BEADS; i++) {
-        var br = 5;
+        var br = 5 * bs;
         var ba = Math.min(1, alpha * 1.2);
         var bx = ch[i].x, by = ch[i].y;
 

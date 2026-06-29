@@ -1508,6 +1508,13 @@
     if (saved) Object.assign(window.POLYMER_TWEAKS, saved);
   } catch(e){}
 
+  // Mobile override: smaller polymers + fewer chains. Desktop unchanged.
+  if (window.matchMedia && window.matchMedia('(max-width: 768px)').matches) {
+    window.POLYMER_TWEAKS.beadScale = 0.55;
+    window.POLYMER_TWEAKS.count = Math.min(window.POLYMER_TWEAKS.count, 4);
+    window.POLYMER_TWEAKS.opacity = Math.min(window.POLYMER_TWEAKS.opacity, 0.45);
+  }
+
   function save() {
     try { localStorage.setItem('polymerTweaks', JSON.stringify(window.POLYMER_TWEAKS)); } catch(e){}
   }
