@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>State-Dependent Uncertainty in Flow-Induced Polymer Unfolding Dynamics — Saugat Upreti</title>
+
+  <!-- ══ Highwire Press citation tags (Google Scholar) ══ -->
+  <meta name="citation_title" content="State-Dependent Uncertainty in Flow-Induced Polymer Unfolding Dynamics">
+  <meta name="citation_author" content="Upreti, Saugat">
+  <meta name="citation_author" content="Chengalrayan, Sruthi">
+  <meta name="citation_author" content="Usta, Mustafa">
+  <meta name="citation_author_institution" content="Cleveland State University">
+  <meta name="citation_publication_date" content="2026/06/21">
+  <meta name="citation_conference_title" content="20th U.S. National Congress on Theoretical and Applied Mechanics (USNCTAM)">
+  <meta name="citation_pdf_url" content="https://saugatupreti.github.io/assets/conferences/upreti-2026-usnctam-polymer-uncertainty.pdf">
+  <meta name="citation_abstract_html_url" content="https://saugatupreti.github.io/publications/upreti-2026-usnctam-polymer-uncertainty.html">
+
+  <!-- ══ Dublin Core ══ -->
+  <meta name="DC.title" content="State-Dependent Uncertainty in Flow-Induced Polymer Unfolding Dynamics">
+  <meta name="DC.creator" content="Saugat Upreti">
+  <meta name="DC.creator" content="Sruthi Chengalrayan">
+  <meta name="DC.creator" content="Mustafa Usta">
+  <meta name="DC.date" content="2026">
+
+  <meta name="description" content="Physics-based direct numerical simulation and data-driven representation learning to characterize state-dependent uncertainty in flow-induced polymer unfolding dynamics. Presented at the 20th USNCTAM, Pasadena, June 2026.">
+  <meta name="author" content="Saugat Upreti">
+  <link rel="canonical" href="https://saugatupreti.github.io/publications/upreti-2026-usnctam-polymer-uncertainty.html">
+
+  <!-- Fonts + icons (same as main site) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+  <!-- Site CSS (reused for identical look) -->
+  <link rel="stylesheet" href="../assets/css/reset.css">
+  <link rel="stylesheet" href="../assets/css/variables.css">
+  <link rel="stylesheet" href="../assets/css/typography.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/sections.css">
+
+  <style>
+    .lp-nav { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,0.88);
+      backdrop-filter: blur(10px); border-bottom: 1px solid var(--bg-border-light); }
+    .lp-nav-inner { max-width: var(--container-narrow); margin: 0 auto; display: flex;
+      align-items: center; justify-content: space-between; padding: 0.85rem clamp(1.5rem,5vw,3rem); }
+    .lp-logo { font-family: var(--font-display); font-weight: 700; font-size: 1.35rem;
+      letter-spacing: 0.06em; color: var(--accent); }
+    .lp-nav-right { display: flex; align-items: center; gap: 1.1rem; }
+    .lp-back { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--text-muted); }
+    .lp-back:hover { color: var(--accent); }
+    .lp-nav-right a i { color: var(--text-muted); font-size: 1rem; transition: color .2s ease; }
+    .lp-nav-right a:hover i { color: var(--accent); }
+    .lp-section { padding: clamp(3rem,7vw,5rem) 0; }
+    .lp-symposium { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--text-muted);
+      margin: 0.6rem 0 0; }
+    .lp-links { display: flex; flex-wrap: wrap; gap: 0.7rem; margin: 1.8rem 0 0; }
+    .lp-h2 { font-family: var(--font-heading); font-size: var(--text-xl); color: var(--text-primary);
+      margin: 2.6rem 0 0.8rem; }
+    .lp-abstract { color: var(--text-secondary); }
+    .lp-abstract p { margin: 0 0 1rem; }
+    .lp-bibtex { font-family: var(--font-mono); font-size: var(--text-sm); background: var(--bg-raised);
+      border: 1px solid var(--bg-border-light); border-radius: var(--card-radius); padding: 1rem 1.2rem;
+      overflow-x: auto; white-space: pre-wrap; word-break: break-word; color: var(--text-secondary); margin-top: 0.8rem; }
+    .lp-foot { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--bg-border-light);
+      font-family: var(--font-mono); font-size: var(--text-xs); color: var(--text-muted); }
+    .lp-foot a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <header class="lp-nav">
+    <div class="lp-nav-inner">
+      <a href="../" class="lp-logo" aria-label="Home">SU</a>
+      <div class="lp-nav-right">
+        <a href="../index.html#publications" class="lp-back">← All publications</a>
+        <a href="https://scholar.google.com/citations?user=b01hEVcAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+        <a href="https://github.com/SaugatUpreti" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section-surface lp-section">
+    <div class="container container--narrow">
+      <div class="pub-list">
+        <div class="pub-card">
+          <div class="pub-year">2026</div>
+          <div class="pub-body">
+            <span class="pub-venue-tag">Conference · USNCTAM 2026</span>
+            <h1 class="pub-title">State-Dependent Uncertainty in Flow-Induced Polymer Unfolding Dynamics</h1>
+            <p class="pub-authors"><mark class="author-highlight">Upreti, S.</mark>; Chengalrayan, S.; Usta, M.</p>
+            <p class="pub-journal">20th U.S. National Congress on Theoretical and Applied Mechanics (USNCTAM), Pasadena Convention Center, Pasadena, CA · June 21–25, 2026</p>
+            <p class="lp-symposium">Mini-symposium: Physics-based data-driven modeling and uncertainty quantification in computational science and engineering</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lp-links">
+        <a class="btn btn-primary" href="https://saugatupreti.github.io/assets/conferences/upreti-2026-usnctam-polymer-uncertainty.pdf"><i class="fas fa-file-pdf"></i> Download PDF</a>
+      </div>
+
+      <h2 class="lp-h2">Abstract</h2>
+      <div class="lp-abstract">
+        <p>Dilute polymer suspensions interacting with hydrodynamic shear flow exhibit complex, highly nonlinear conformational dynamics arising from the interplay between flow-induced forces, internal structural constraints governing advection and reeling, and stochastic perturbations. Under shear flow, long-chain polymers undergo repeated folding, rolling, and unfolding events, giving rise to a rich spectrum of conformational states. These conformations play a critical role in determining polymer function, as folding and unfolding behavior directly influence biomechanical and biochemical activity. However, conventional scalar descriptors such as instantaneous extension length and radius of gyration are often insufficient to distinguish these states or to predict subsequent dynamical outcomes, particularly in regimes where similar global measures correspond to qualitatively different behaviors.</p>
+        <p>In this work, we leverage large-scale, physics-based direct numerical simulations of polymer–fluid interactions to generate extensive ensembles of high-dimensional, time-resolved polymer configurations. To systematically organize this complex data, polymer conformations are represented as graphs and analyzed using unsupervised, data-driven representation learning with autoencoder–decoder architectures and attention-based pooling. This approach yields low-dimensional latent embeddings that preserve essential structural and topological features, enabling consistent identification of physically meaningful conformational states, including coiled, partially extended, protruded, and extended configurations.</p>
+        <p>Uncertainty is characterized by conditioning polymer extension outcomes on learned conformational states, revealing intrinsic uncertainty in the dynamical evolution of polymers under shear flow. In particular, minimum-extension (globular) configurations are identified as metastable decision states from which polymers may evolve toward distinct macroscopic outcomes. By analyzing probability distributions of extension outcomes conditioned on state, we characterize the likelihood and range of possible extensions. This enables us to distinguish conformational states that deterministically suppress large extension and exhibit low intrinsic uncertainty from states that admit multiple competing outcomes and therefore exhibit high intrinsic uncertainty. These results illustrate how physics-based simulation ensembles can be mined to distinguish deterministic and stochastic regimes in complex flow-driven polymer dynamics.</p>
+      </div>
+
+      <h2 class="lp-h2">BibTeX</h2>
+      <pre class="lp-bibtex">@inproceedings{upreti2026statedependent,
+  title     = {State-Dependent Uncertainty in Flow-Induced Polymer Unfolding Dynamics},
+  author    = {Upreti, Saugat and Chengalrayan, Sruthi and Usta, Mustafa},
+  booktitle = {20th U.S. National Congress on Theoretical and Applied Mechanics (USNCTAM)},
+  address   = {Pasadena, CA, USA},
+  year      = {2026}
+}</pre>
+
+      <div class="lp-foot">
+        <a href="../">Saugat Upreti</a> &nbsp;·&nbsp;
+        <a href="https://scholar.google.com/citations?user=b01hEVcAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

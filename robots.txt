@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Google Scholar's crawler
+User-agent: Googlebot
+Allow: /
+
+Sitemap: https://saugatupreti.github.io/sitemap.xml
