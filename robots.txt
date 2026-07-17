@@ -1,8 +1,42 @@
 User-agent: *
 Allow: /
 
-# Google Scholar's crawler
+# ─── Search engine crawlers ───
 User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# ─── AI answer-engine crawlers (explicitly allowed for citation eligibility) ───
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
 Allow: /
 
 Sitemap: https://saugatupreti.github.io/sitemap.xml
